@@ -14,5 +14,10 @@ export default [
 	{
 		path: '/contact',
 		text: 'contact'
+	},
+	{
+		path: '/tours',
+		text: 'tours'
 	}
+
 ]

@@ -6,7 +6,7 @@ import StyledHero from '../components/StyledHero'
 
 export default class Tours extends Component {
 	// console.log()
-	render() {
+	render () {
 		return (
 			<Layout>hello from tours page!!!!!
 				<StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid} />
@@ -19,7 +19,7 @@ export const query = graphql`
 	query {
 		defaultBcg:file(relativePath:{eq:"sifis3.jpg"}){
 			childImageSharp{
-				fluid(quality:90,maxWidth:4160){
+				fluid(quality:90,maxWidth:460, maxHeight:460){
 				...GatsbyImageSharpFluid_withWebp
 				}
 			}

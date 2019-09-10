@@ -1,34 +1,28 @@
-import React from "react"
-import Layout from "../components/Layout"
-// import RegHeader from '../examples/RegHeader'
 import {graphql} from 'gatsby'
-import Images from '../examples/Images'
-import Button from "../styled/Button"
+import React, {Component} from "react"
+import Layout from "../components/Layout"
+import StyledHero from '../components/StyledHero'
+// import Images from '../examples/Images'
 
-
-
-export default function tours () {
+export default class Tours extends Component {
 	// console.log()
-	return (<Layout>hello from tours page!!!!!
-		<Images />
-
-		<div><Button big>hello from sc button1</Button>
-			<Button color='#f15025'>hello from button2</Button>
-			<h1>title: </h1>
-		</div></Layout>)
+	render() {
+		return (
+			<Layout>hello from tours page!!!!!
+				<StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid} />
+			</Layout>
+		)
+	}
 }
 
-// export const query = graphql`
-// 	query {
-//   site {
-//     siteMetadata {
-//       title
-//       description
-//       author
-//       data {
-// 				name
-// 				age
-//       }
-//     }
-//   }
-// }`
+export const query = graphql`
+	query {
+		defaultBcg:file(relativePath:{eq:"sifis3.jpg"}){
+			childImageSharp{
+				fluid(quality:90,maxWidth:4160){
+				...GatsbyImageSharpFluid_withWebp
+				}
+			}
+		}
+	}
+`

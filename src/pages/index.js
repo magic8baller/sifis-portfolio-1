@@ -7,12 +7,12 @@ import StyledHero from "../components/StyledHero"
 export default ({data}) => (
 
 	<Layout>
-	<StyledHero home='true' img={data.defaultBcg.childImageSharp.fluid}>
-		<Banner title='joseph kalogerakis' info='Painter and Digital Artist'>
-			<Link to='/gallery' className='btn-white'>portfolio</Link>
-		</Banner>
-	</StyledHero>
-	</Layout >
+		<StyledHero home='true' img={data.defaultBcg.childImageSharp.fluid}>
+			<Banner title='joseph kalogerakis' info='Painter and Digital Artist'>
+				<Link to='/gallery' className='btn-white'>portfolio</Link>
+			</Banner>
+		</StyledHero>
+	</Layout>
 )
 
 export const query = graphql`

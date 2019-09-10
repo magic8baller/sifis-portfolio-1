@@ -1,5 +1,5 @@
 module.exports = {
-	siteMetaData: {
+	siteMetadata: {
 		title: 'SifisPort1',
 		description: "Explore joseph kalogerakis' artwork",
 		author: "@magic8baller",

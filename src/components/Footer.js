@@ -11,7 +11,7 @@ const Footer = () => {
       <div className={styles.links}>
         {links.map((item, index) => {
           return (
-            <AniLink key={index} to={item.path}>
+            <AniLink swipe key={index} to={item.path}>
               {item.text}
             </AniLink>
           )

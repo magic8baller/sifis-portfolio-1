@@ -16,8 +16,16 @@ export default [
 		text: 'contact'
 	},
 	{
-		path: '/tours',
-		text: 'tours'
-	}
+		path: '/paintings',
+		text: 'paintings'
+	},
+	{
+		path: '/drawings',
+		text: 'drawings'
+	},
+	{
+		path: '/digital',
+		text: 'digital'
+	},
 
 ]

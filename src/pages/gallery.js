@@ -1,31 +1,28 @@
 import React, {Component} from 'react';
 import Layout from '../components/Layout';
-import '../css/gallery.css';
-import Images from '../images';
-//  sifis2.jpg, sifis3.jpg, sifis4.jpg, sifis5.jpg, sifis6.jpg, sifis7.jpg, sifis8.jpg, sifis9.jpg} from '../images'
-const imgStyle = {
-	justifyContent: 'center',
-	width: '80vw',
-	margin: '3rem auto',
-	display: 'grid',
-	gridColumnGap: '2rem',
-	gridRowGap: '2rem',
-}
+import styles from '../css/tour.module.css';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import img1 from '../images/sifis1.jpg'
+import img2 from '../images/sifis2.jpg'
 export default class Gallery extends Component {
 	render () {
-		console.log(Images.length)
+
 		return (
 			<Layout>
-				<div style={imgStyle}>
-					{Images.map((item, index) => {
-						return (
-							<div className='hover14'>
-								<figure>
-									<img style={{maxWidth: '70vw'}} key={index + item} src={item} alt={item} /></figure><span /></div>
-						)
-					}
-					)}
+
+					<article style={{textAlign: 'center'}} className={styles.tour}>
+<div className={styles.imgContainer}>
+
+					<AniLink fade className={styles.link} to={`/gallery/drawings`}>Expand</AniLink>
 				</div>
+					<AniLink fade to='/drawings' className='btn-primary'>all drawings</AniLink>
+					<br /><br />
+					<AniLink fade to='/paintings' className='btn-primary'>all paintings</AniLink>
+					<br/><br/>
+					<AniLink fade to='/digital' className='btn-primary'>all digital work</AniLink>
+				</article>
+
+
 			</Layout>
 		)
 	}

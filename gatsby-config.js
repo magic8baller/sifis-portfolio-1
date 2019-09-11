@@ -25,5 +25,5 @@ module.exports = {
 			accessToken: process.env.CONTENTFUL_TOKEN,
 		},
 
-	}, `gatsby-plugin-sass`, `gatsby-plugin-styled-components`, `gatsby-transformer-sharp`, `gatsby-plugin-sharp`, `gatsby-plugin-transition-link`],
+	}, `gatsby-plugin-sass`, `gatsby-plugin-styled-components`, `gatsby-transformer-sharp`, `gatsby-plugin-sharp`, `gatsby-plugin-transition-link`, `gatsby-plugin-playground`],
 }

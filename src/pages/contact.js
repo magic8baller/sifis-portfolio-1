@@ -1,6 +1,6 @@
 import {graphql} from "gatsby"
 import React from 'react'
-import Contact2 from '../components/Contact'
+import ContactForm from '../components/ContactForm'
 import Layout from "../components/Layout"
 import Services from '../components/Services'
 import StyledHero from "../components/StyledHero"
@@ -8,8 +8,7 @@ const Contact = ({data}) => {
 	return (
 		<Layout>
 			<StyledHero img={data.contactBcg.childImageSharp.fluid} />
-			<Contact2 />
-			{/* <h1>yo HOLLA@MEe</h1> */}
+			<ContactForm />
 			<Services />
 		</Layout>
 	)

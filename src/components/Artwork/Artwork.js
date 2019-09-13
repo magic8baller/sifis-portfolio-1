@@ -4,7 +4,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import React from 'react';
 import styles from '../../css/tour.module.css';
 // import {FaPalette, FaPenFancy, FaApple} from 'react-icons/fa'
-
+import PropTypes from 'prop-types';
 const Artwork = ({art}) => {
 
 	const {name, slug, createdAt, featured, medium, images, price} = art
@@ -12,14 +12,12 @@ const Artwork = ({art}) => {
 	let mainImage = images[0].fluid;
 	let imageDescription = images[0].description
 
-
-console.log(images[0])
 	return (
 		<article className={styles.tour}>
 			<div className={styles.imgContainer}>
 				<Image fluid={mainImage} description={imageDescription} className={styles.img} alt='single artwork' />
 				<AniLink fade className={styles.link} to={
-					`/${slug}`}>{imageDescription}</AniLink>
+					`/${slug || 'gallery'}`}>{imageDescription}</AniLink>
 			</div>
 			<div className={styles.footer}>
 				<h3>{name}</h3>
@@ -28,8 +26,8 @@ console.log(images[0])
 					<em>{description}</em>
 					</h4>
 					<div className={styles.details}>
-	<h6>${price}</h6>
-						<h6>{createdAt.slice(0, 4)}</h6>
+	<h6>${price || ''}</h6>
+						<h6>{createdAt.slice(0, 4) || '2019'}</h6>
 					</div>
 
 					</div>
@@ -38,6 +36,16 @@ console.log(images[0])
 			{/* </div>  */}
 		</article>
 	)
+}
+
+Artwork.propTypes = {
+	art: PropTypes.shape({
+		name: PropTypes.string.isRequired,
+		slug: PropTypes.string.isRequired,
+		// createdAt: PropTypes.,
+		images: PropTypes.arrayOf(PropTypes.object).isRequired,
+		price: PropTypes.number.isRequired
+	})
 }
 
 export default Artwork

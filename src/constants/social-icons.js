@@ -3,7 +3,7 @@ import {FaFacebook, FaInstagram, FaTwitterSquare} from 'react-icons/fa'
 export default [
 	{
 		icon: <FaFacebook />,
-		url: 'https://facebook.com'
+		url: 'https://www.facebook.com/cerberusjoe'
 	},
 	{
 		icon: <FaTwitterSquare />,
@@ -11,6 +11,6 @@ export default [
 	},
 	{
 		icon: <FaInstagram />,
-		url: 'https://instagram.com'
+		url: 'https://www.instagram.com/iosifkalogerakis/'
 	}
 ]

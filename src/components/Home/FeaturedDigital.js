@@ -15,8 +15,13 @@ query{
 					featured
 					createdAt
 					medium
+					price
+						description{
+						description
+					}
 					contentful_id
 					images{
+						description
 						fluid{
 								...GatsbyContentfulFluid_tracedSVG
 						}

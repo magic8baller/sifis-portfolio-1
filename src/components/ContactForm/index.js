@@ -8,7 +8,7 @@ const Contact = () => {
 			<div className={styles.center}>
 
 
-				<form action="https://formspree.io/lturis@gmail.com" method="POST" className={styles.form}>
+				<form action="https://formspree.io/josagr2009@hotmail.com" method="POST" className={styles.form}>
 					<div>
 						<label htmlFor='name'>Name</label>
 						<input type="text" name='name' id='name' className={styles.formControl} placeholder='john smith' />

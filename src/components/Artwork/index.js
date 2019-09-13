@@ -1,4 +1,5 @@
 import AllArtworks from './AllArtworks'
 import Artwork from './Artwork'
 import ArtworkList from './ArtworkList'
-export {ArtworkList, AllArtworks, Artwork}
+import Thumb from './Thumb'
+export {ArtworkList, AllArtworks, Artwork, Thumb}

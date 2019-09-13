@@ -1,4 +1,4 @@
-export default [
+const links = [
 	{
 		path: '/',
 		text: 'home'
@@ -16,11 +16,11 @@ export default [
 		text: 'contact'
 	},
 	{
-		path: '/paintings',
+		path: '/painting',
 		text: 'paintings'
 	},
 	{
-		path: '/drawings',
+		path: '/drawing',
 		text: 'drawings'
 	},
 	{
@@ -29,3 +29,6 @@ export default [
 	},
 
 ]
+
+export const mainLinks = links.slice(0, 4)
+export const allLinks = links

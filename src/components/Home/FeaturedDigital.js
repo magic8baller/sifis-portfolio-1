@@ -16,7 +16,7 @@ query{
 					createdAt
 					medium
 					price
-						description{
+					description{
 						description
 					}
 					contentful_id

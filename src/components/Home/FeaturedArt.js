@@ -43,7 +43,7 @@ const FeaturedArt = () => {
 					return <Artwork key={node.contentful_id} art={node} />
 				})}
 			</div>
-			<AniLink fade to='/gallery' className='btn-primary'>all artwork</AniLink>
+			<AniLink fade to='/' className='btn-primary'>return home</AniLink>
 		</section>
 	)
 }

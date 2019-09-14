@@ -17,7 +17,7 @@ const Artwork = ({art}) => {
 			<div className={styles.imgContainer}>
 				<Image fluid={mainImage} description={imageDescription} className={styles.img} alt='single artwork' />
 				<AniLink fade className={styles.link} to={
-					`/gallery/${slug || 'gallery'}`}>{imageDescription}</AniLink>
+					`/${slug}`}>{imageDescription}</AniLink>
 			</div>
 			<div className={styles.footer}>
 				<h3>{name}</h3>

@@ -1,8 +1,8 @@
 import {graphql, useStaticQuery} from 'gatsby';
 import Image from 'gatsby-image';
 import React from 'react';
-import Title from '../StyledTitle';
 import styles from '../../css/about.module.css';
+import Title from '../StyledTitle';
 
 const getAbout = graphql`
 query{
@@ -14,7 +14,7 @@ query{
         images{
 			description
       fluid{
-        ...GatsbyContentfulFluid_tracedSVG
+        ...GatsbyContentfulFluid
 			}
 		}
 

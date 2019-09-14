@@ -1,5 +1,5 @@
-import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
+import React from 'react'
 import ArtworkList from './ArtworkList'
 const getArtworks = graphql`
 query {
@@ -14,7 +14,7 @@ query {
 				images {
 					description
 					fluid{
-						...GatsbyContentfulFluid_tracedSVG
+						...GatsbyContentfulFluid
 					}
 				}
 				description{
@@ -30,7 +30,7 @@ const AllArtworks = () => {
 	const {artworks} = useStaticQuery(getArtworks)
 	return (
 		<div>
-<ArtworkList artworks={artworks}/>
+			<ArtworkList artworks={artworks} />
 		</div>
 	)
 }

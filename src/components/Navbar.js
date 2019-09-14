@@ -1,7 +1,7 @@
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import React, {useState} from "react";
 import {FaAlignRight} from "react-icons/fa";
-import {mainLinks} from "../constants/links";
+import {links} from "../constants/links";
 // import socialIcons from "../constants/social-icons"
 import styles from "../css/navbar.module.css";
 import logo from "../images/logo2.png";
@@ -12,7 +12,7 @@ const Navbar = () => {
 		setNav(isOpen => !isOpen)
 	}
 	// const mainLinks = links.slice(0, 4)
-	console.log(mainLinks)
+	// console.log(mainLinks)
 	return (
 		<nav className={styles.navbar}>
 			<div className={styles.navCenter}>
@@ -29,7 +29,7 @@ const Navbar = () => {
 							: `${styles.navLinks}`
 					}
 				>
-					{mainLinks.map((item, index) => {
+					{links.map((item, index) => {
 						return (
 							<li key={index}>
 								<AniLink swipe to={item.path} style={{fontSize: '1rem'}}>{item.text}</AniLink>

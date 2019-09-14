@@ -14,7 +14,7 @@ query {
 				images {
 					description
 					fluid{
-						...GatsbyContentfulFluid
+						...GatsbyContentfulFluid_tracedSVG
 					}
 				}
 				description{

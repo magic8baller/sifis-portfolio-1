@@ -1,35 +1,36 @@
-import {graphql, useStaticQuery} from 'gatsby';
-import Image from 'gatsby-image';
+// import {graphql, useStaticQuery} from 'gatsby';
+// import Image from 'gatsby-image';
 import React from 'react';
 import styles from '../../css/about.module.css';
+import mainImage from '../../images/itsame.jpg';
 import Title from '../StyledTitle';
+// const getAbout = graphql`
+// query{
+//   aboutImage: allContentfulGallery(filter: {name: {eq: "me"}}) {
+//     edges {
+//       node {
+//         name
+//         slug
+//         images{
+// 			description
+//       fluid{
+//         ...GatsbyContentfulFluid
+// 			}
+// 		}
 
-const getAbout = graphql`
-query{
-  aboutImage: allContentfulGallery(filter: {name: {eq: "me"}}) {
-    edges {
-      node {
-        name
-        slug
-        images{
-			description
-      fluid{
-        ...GatsbyContentfulFluid
-			}
-		}
+//         contentful_id
+//       }
+//     }
+//   }
 
-        contentful_id
-      }
-    }
-  }
+// }
+// `
 
-}
-`
-
-export default function About () {
-	const aboutResponse = useStaticQuery(getAbout)
-	const aboutMe = aboutResponse.aboutImage.edges
-	const mainImage = aboutMe[0].node.images[0].fluid
+export default function About ({data}) {
+	// const aboutResponse = useStaticQuery(getAbout)
+	// const aboutMe = aboutResponse.aboutImage.edges
+	// const mainImage = aboutMe[0].node.images[0].fluid
+	console.log(mainImage)
 	return (
 
 		<section className={styles.about}>
@@ -37,7 +38,7 @@ export default function About () {
 			<div className={styles.aboutCenter}>
 				<article className={styles.aboutImg}>
 					<div className={styles.imgContainer}>
-						<Image fluid={mainImage} alt='awesome dragon' />
+						<img src={mainImage} alt='awesome dragon' />
 					</div>
 				</article>
 				<article className={styles.aboutInfo}>
@@ -53,3 +54,15 @@ export default function About () {
 		</section>
 	)
 }
+
+// const query = graphql`
+// query {
+//   defaultImg:file(relativePath:{eq:"itsame.jpg"}){
+//     childImageSharp{
+//       fluid(quality:90,maxWidth:4160){
+//         ...GatsbyImageSharpFluid_withWebp
+//       }
+//     }
+//   }
+// }
+// `

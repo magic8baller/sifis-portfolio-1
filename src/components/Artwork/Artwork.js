@@ -17,7 +17,7 @@ const Artwork = ({art}) => {
 			<div className={styles.imgContainer}>
 				<Image fluid={mainImage} description={imageDescription} className={styles.img} alt='single artwork' />
 				<AniLink fade className={styles.link} to={
-					`/${slug || 'gallery'}`}>{imageDescription}</AniLink>
+					`/gallery/${slug || 'gallery'}`}>{imageDescription}</AniLink>
 			</div>
 			<div className={styles.footer}>
 				<h3>{name}</h3>
@@ -27,7 +27,7 @@ const Artwork = ({art}) => {
 					</h4>
 					<div className={styles.details}>
 	<h6>${price || ''}</h6>
-						<h6>{createdAt.slice(0, 4) || '2019'}</h6>
+						<h6>{createdAt || '2019'}</h6>
 					</div>
 
 					</div>

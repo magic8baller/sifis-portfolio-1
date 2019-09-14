@@ -13,7 +13,7 @@ query{
 					name
 					slug
 					featured
-					createdAt
+    			createdAt(formatString:"MMMM YYYY")
 					medium
 					price
 					description{

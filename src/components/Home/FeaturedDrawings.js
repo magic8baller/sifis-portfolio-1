@@ -14,7 +14,7 @@ query{
 					name
 					slug
 					featured
-					createdAt
+					createdAt(formatString:"MMMM YYYY")
 					price
 					medium
 					contentful_id

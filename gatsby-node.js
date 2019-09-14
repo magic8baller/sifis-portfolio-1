@@ -15,7 +15,7 @@ exports.createPages = async ({actions, graphql}) => {
 	`)
 	data.artworks.edges.forEach(({node}) => {
 		createPage({
-			path: `/${node.slug}`,
+			path: `/gallery/${node.slug}`,
 			component: path.resolve("./src/templates/artwork-template.js"),
 			context: {
 				slug: node.slug

@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
 
 :root {
-  --primaryColor: #3fd0d4;
+  --primaryColor: #dec79b;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
-  --mainBlack: #222;
+  --mainBlack: #18181e;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
   --mainTransition: all 0.3s linear;
@@ -40,7 +40,8 @@ p {
   margin-bottom: 1.25rem;
 }
 .defaultHero {
-  min-height: calc(100vh - 62px);
+	min-height: calc(100vh - 62px);
+
   background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/sifis3.jpg") center/cover no-repeat;
   display: flex;

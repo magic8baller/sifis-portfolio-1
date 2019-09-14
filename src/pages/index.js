@@ -19,7 +19,7 @@ export default ({data}) => (
 
 export const query = graphql`
 query {
-  defaultBcg:file(relativePath:{eq:"sifis3.jpg"}){
+  defaultBcg:file(relativePath:{eq:"sifis-self.jpg"}){
     childImageSharp{
       fluid(quality:90,maxWidth:4160){
         ...GatsbyImageSharpFluid_withWebp

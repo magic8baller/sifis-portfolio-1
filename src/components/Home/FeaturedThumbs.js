@@ -20,7 +20,7 @@ query{
 					contentful_id
 					images{
 						fluid{
-								...GatsbyContentfulFluid
+								...GatsbyContentfulFluid_tracedSVG
 						}
 					}
 				}

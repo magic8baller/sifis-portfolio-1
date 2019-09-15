@@ -1,7 +1,7 @@
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import React from "react";
 import {FaGithub, FaReact} from 'react-icons/fa';
-import {links} from "../constants/links";
+import {mainLinks} from "../constants/links";
 import socialIcons from "../constants/social-icons";
 import styles from "../css/footer.module.css";
 
@@ -10,7 +10,7 @@ const Footer = () => {
 	return (
 		<footer className={styles.footer}>
 			<div className={styles.links}>
-				{links.map((item, index) => {
+				{mainLinks.map((item, index) => {
 					return (
 						<AniLink swipe key={index} to={item.path}>
 							{item.text}

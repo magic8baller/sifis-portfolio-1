@@ -25,7 +25,7 @@ query{
 					images{
 						description
 						fluid{
-								...GatsbyContentfulFluid
+								...GatsbyContentfulFluid_tracedSVG
 						}
 					}
 				}
@@ -45,7 +45,7 @@ const FeaturedDrawings = () => {
 					return <Artwork key={node.contentful_id} art={node} />
 				})}
 			</div>
-			<AniLink fade to='/' className='btn-primary'>return home</AniLink>
+			<AniLink fade to='/gallery/' className='btn-primary'>return to gallery</AniLink>
 		</section>
 	)
 }

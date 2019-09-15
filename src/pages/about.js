@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from "../components/Layout";
 // import Title from '../components/StyledTitle';
 // import styles from '../css/about.module.css';
-import AboutContent from '../components/Home/AboutContent'
+import AboutContent from '../components/AboutContent'
 
 export default function About () {
 

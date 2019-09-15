@@ -13,17 +13,17 @@ query{
 					name
 					slug
 					featured
-					createdAt(formatString:"MMMM YYYY")
+    			createdAt(formatString:"MMMM YYYY")
 					medium
 					price
-					contentful_id
 					description{
 						description
 					}
+					contentful_id
 					images{
 						description
 						fluid{
-								...GatsbyContentfulFluid
+								...GatsbyContentfulFluid_tracedSVG
 						}
 					}
 				}
@@ -43,7 +43,7 @@ const FeaturedArt = () => {
 					return <Artwork key={node.contentful_id} art={node} />
 				})}
 			</div>
-			<AniLink fade to='/' className='btn-primary'>return home</AniLink>
+			<AniLink fade to='/gallery/' className='btn-primary'>return to gallery</AniLink>
 		</section>
 	)
 }

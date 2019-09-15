@@ -1,4 +1,4 @@
-export const links = [
+const links = [
 	{
 		path: '/',
 		text: 'home'
@@ -6,10 +6,10 @@ export const links = [
 		path: '/about',
 		text: 'about'
 	},
-	// {
-	// 	path: '/gallery',
-	// 	text: 'gallery'
-	// },
+	{
+		path: '/gallery',
+		text: 'gallery'
+	},
 
 	{
 		path: '/contact',
@@ -30,5 +30,5 @@ export const links = [
 
 ]
 
-// export const mainLinks = links.slice(0, 4)
-// export const allLinks = links
+export const mainLinks = links.slice(0, 4)
+export const allLinks = links

@@ -1,13 +1,9 @@
 import React from 'react'
-import {FaFacebook, FaInstagram, FaTwitterSquare} from 'react-icons/fa'
+import {FaFacebook, FaInstagram} from 'react-icons/fa'
 export default [
 	{
 		icon: <FaFacebook />,
 		url: 'https://www.facebook.com/cerberusjoe'
-	},
-	{
-		icon: <FaTwitterSquare />,
-		url: 'https://twitter.com/?lang=en'
 	},
 	{
 		icon: <FaInstagram />,

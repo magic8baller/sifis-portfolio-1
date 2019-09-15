@@ -26,7 +26,7 @@ const Artwork = ({art}) => {
 					<em>{description}</em>
 					</h4>
 				<div className={styles.details}>
-						<h6>${price || ''}</h6>
+						<h6>${price || '100'}</h6>
 						<h6>{createdAt || '2019'}</h6>
 				</div>
 				</div>

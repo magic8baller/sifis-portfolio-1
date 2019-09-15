@@ -13,6 +13,7 @@ const TitleWrapper = styled.div`
 text-transform: uppercase;
 font-size:2.3rem;
 padding-top: 3rem;
+
 margin-bottom:2rem;
 h1 {text-align: center; letter-spacing:7px; color: var(--mainWhite);}
 h3 {text-align: center; text-transform: capitalize;}

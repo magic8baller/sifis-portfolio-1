@@ -16,15 +16,3 @@ export default class Drawings extends Component {
 		)
 	}
 }
-
-// export const query = graphql`
-// 	query {
-// 		defaultBcg:file(relativePath:{eq:"sifis3.jpg"}){
-// 			childImageSharp{
-// 				fluid(quality:90,maxWidth:460, maxHeight:460){
-// 				...GatsbyImageSharpFluid_withWebp
-// 				}
-// 			}
-// 		}
-// 	}
-// `

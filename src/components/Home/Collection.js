@@ -4,13 +4,12 @@ import {graphql, useStaticQuery} from 'gatsby';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import React from 'react';
 import styles from '../../css/items.module.css';
-import {Thumb, CollectionThumb} from '../Artwork';
-// import Collection from '../components/Home/Collection'
+import {CollectionThumb} from '../Artwork';
 import Title from '../StyledTitle';
 
 const getThumbs = graphql`
 query{
-		featuredArt:allContentfulGallery(filter:{featured:{eq:true}}){
+		featuredArt:allContentfulGallery(filter:{collection:{eq:"abstract"}}){
 			edges{
 				node{
 					name
@@ -20,18 +19,18 @@ query{
 					medium
 					contentful_id
 					images{
+						description
 						fluid{
-								...GatsbyContentfulFluid
+							...GatsbyContentfulFluid
 						}
 					}
-					collection
 				}
 			}
 		}
-	}
+}
 `
 
-const FeaturedThumb = () => {
+const Collection = () => {
 	const thumbsResponse = useStaticQuery(getThumbs)
 	const artworks = thumbsResponse.featuredArt.edges
 	return (
@@ -39,13 +38,12 @@ const FeaturedThumb = () => {
 			<Title title='featured' subtitle='artwork' />
 			<div className={styles.center}>
 				{artworks.map(({node}) => {
-					return (<div><Thumb key={node.contentful_id} art={node} /></div>)
+					return (<div><CollectionThumb key={node.contentful_id} art={node} /></div>)
 				})}
-				{/* <CollectionThumb/> */}
 			</div>
 			<AniLink fade to='/' className='btn-primary'>return home</AniLink>
 		</section>
 	)
 }
 
-export default FeaturedThumb
+export default Collection

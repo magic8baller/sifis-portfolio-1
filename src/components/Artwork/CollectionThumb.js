@@ -4,25 +4,22 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import React from 'react';
 import styles from '../../css/tour.module.css';
 // import {FaPalette, FaPenFancy, FaApple} from 'react-icons/fa'
-const Thumb = ({art}) => {
+const CollectionThumb = ({art}) => {
+console.log(art)
 
-	let {collection, name, slug, description, createdAt, featured, medium, images, price} = art
+// return <div>hi</div>
+	let {slug, name, description, createdAt, featured, medium, images, price, collection} = art
 	let mainImage = images[0].fluid;
-
-const thumbTitle = collection ? `${collection + ' collection'}` : `${medium + 's'}`
-const redirectLink = collection ? `${collection}` : `${medium + 's'}`
-
 
 	return (
 		<article className={styles.tour}>
 			<div className={styles.imgContainer}>
 				<Image fluid={mainImage} className={styles.img} alt='single Thumb' />
-				<AniLink fade className={styles.link} to={`/${redirectLink}`}>{thumbTitle}</AniLink>
-
+				<AniLink fade className={styles.link} to={`/${collection}`}>{collection}</AniLink>
 			</div>
 			<div className={styles.footer}>
 
-				<h2>{thumbTitle}</h2>
+				<h2>{name}</h2>
 
 
 
@@ -31,4 +28,4 @@ const redirectLink = collection ? `${collection}` : `${medium + 's'}`
 	)
 }
 
-export default Thumb
+export default CollectionThumb

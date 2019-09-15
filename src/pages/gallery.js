@@ -1,11 +1,13 @@
 import React from 'react';
 // import {AllArtworks} from '../components/Artwork';
 import FeaturedThumbs from '../components/Home/FeaturedThumbs';
+import CollectionThumb from '../components/Artwork/CollectionThumb';
 import Layout from '../components/Layout';
 const Gallery = () => {
 	return (
 		<Layout>
 			<FeaturedThumbs />
+			{/* <CollectionThumb/> */}
 			{/* <AllArtworks /> */}
 		</Layout>
 	)

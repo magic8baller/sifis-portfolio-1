@@ -11,9 +11,7 @@ export default ({data}) => (
 	<Layout>
 		<StyledHero home='true' img={data.defaultBcg.childImageSharp.fluid}>
 			<Banner title='joseph kalogerakis' info='Painter and Digital Artist'>
-				<AniLink style={{margin: '1rem'}} fade to='/painting' className='btn-white'>paintings</AniLink>
-				<AniLink style={{margin: '1rem'}} fade to='/drawing' className='btn-white'>drawings</AniLink>
-				<AniLink fade to='/digital' className='btn-white'>digital</AniLink>
+				<AniLink style={{margin: '1rem'}} fade to='/gallery' className='btn-white'>portfolio</AniLink>
 			</Banner>
 		</StyledHero>
 	</Layout>

@@ -1,18 +1,19 @@
 .services {
-  background: var(--darkGrey);
+  background: rgba(255, 255, 255, 0.068);
 	padding: 2rem 0;
-	margin: 2rem;
+	margin: 2.5rem 3rem 0 3rem;
 }
 .center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-column-gap: 2rem;
+	grid-column-gap: 2rem;
+	text-align: center;
 }
 .service {
   margin: 2rem 0;
-  text-align: center;
+
 }
 .service span {
   background: var(--primaryColor);

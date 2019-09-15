@@ -8,8 +8,8 @@ const Contact = ({data}) => {
 	return (
 		<Layout>
 			<StyledHero img={data.contactBcg.childImageSharp.fluid} />
-			<ContactForm />
 			<Services />
+			<ContactForm />
 		</Layout>
 	)
 }

@@ -35,7 +35,7 @@ const Footer = () => {
 			<div className={styles.copyright}>
 				copyright &copy; Joseph Kalogerakis {new Date().getFullYear()} all rights reserved
 				<br />
-				<small>Made with <span role="img">❤️</span> + <a style={{color: 'lightblue', fontSize: '0.9rem'}} href='https://reactjs.org'> <FaReact /> </a> .by Leslie Turis<a style={{color: 'lightblue', fontSize: '0.9rem'}} href='https://github.com/magic8baller'> <FaGithub /></a></small>
+				<small style={{fontSize: '0.6rem'}}><em>Made with <span role="img">❤️</span><a style={{color: 'lightblue', fontSize: '0.9rem'}} href='https://reactjs.org'><FaReact /></a>  by Leslie Turis  <a style={{color: 'lightblue', fontSize: '0.9rem'}} href='https://github.com/magic8baller'><FaGithub /></a></em></small>
 			</div>
 		</footer>
 	)

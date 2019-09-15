@@ -3,7 +3,6 @@ import Image from 'gatsby-image';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import React from 'react';
 import styles from '../../css/tour.module.css';
-// import {FaPalette, FaPenFancy, FaApple} from 'react-icons/fa'
 import PropTypes from 'prop-types';
 const Artwork = ({art}) => {
 

@@ -1,41 +1,15 @@
-import {graphql, useStaticQuery} from 'gatsby';
+// import {graphql, useStaticQuery} from 'gatsby';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import React from 'react';
 import styles from '../../css/items.module.css';
 import {Artwork} from '../Artwork';
 import Title from '../StyledTitle';
+import {useAbstract} from '../hooks/useAbstract'
 
-const getAbstracts = graphql`
-query{
-		featuredArt:allContentfulGallery(filter:{collection:{eq:"abstract"}}){
-			edges{
-				node{
-					name
-					slug
-					featured
-    			createdAt(formatString:"MMMM YYYY")
-					medium
-					price
-					description{
-						description
-					}
-					collection
-					contentful_id
-					images{
-						description
-						fluid{
-								...GatsbyContentfulFluid
-						}
-					}
-				}
-			}
-		}
-	}
-`
 
 const AbstractCollection = () => {
-	const abstractResponse = useStaticQuery(getAbstracts)
-	const artworks = abstractResponse.featuredArt.edges
+	// const abstractResponse = useStaticQuery(getAbstracts)
+	const artworks = useAbstract()
 	return (
 		<section className={styles.tours}>
 			<Title title='featured' subtitle='artwork' />

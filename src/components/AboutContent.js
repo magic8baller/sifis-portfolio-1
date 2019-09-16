@@ -1,32 +1,32 @@
-import {graphql, useStaticQuery} from 'gatsby';
 import Image from 'gatsby-image';
 import React from 'react';
 import styles from '../css/about.module.css';
+import {useAboutImage} from './hooks';
 // import mainImage from '../images/itsame.jpg';
 import Title from './StyledTitle';
-const getAbout = graphql`
-query{
-  aboutImage: allContentfulGallery(filter: {name: {eq: "me"}}) {
-    edges {
-      node {
-        name
-        slug
-        images{
-			description
-      fluid{
-        ...GatsbyContentfulFluid
-			}
-		}
-        contentful_id
-      }
-    }
-  }
+// const getAbout = graphql`
+// query{
+//   aboutImage: allContentfulGallery(filter: {name: {eq: "me"}}) {
+//     edges {
+//       node {
+//         name
+//         slug
+//         images{
+// 			description
+//       fluid{
+//         ...GatsbyContentfulFluid
+// 			}
+// 		}
+//         contentful_id
+//       }
+//     }
+//   }
 
-}
-`
-export default function About ({data}) {
-	const aboutResponse = useStaticQuery(getAbout)
-	const aboutMe = aboutResponse.aboutImage.edges
+// }
+// `
+export default function About () {
+	// const aboutResponse = useStaticQuery(getAbout)
+	const aboutMe = useAboutImage()
 	const mainImage = aboutMe[0].node.images[0].fluid
 
 	return (

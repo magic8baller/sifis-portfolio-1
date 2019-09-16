@@ -1,13 +1,13 @@
 import Image from 'gatsby-image';
 // import {FaMap} from 'react-icons/fa'
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import PropTypes from 'prop-types';
 import React from 'react';
 import styles from '../../css/tour.module.css';
-import PropTypes from 'prop-types';
 const Artwork = ({art}) => {
 
-	const {name, slug, createdAt, medium, images, price} = art
-	const {description} = art.description
+	const {name, slug, createdAt, medium, images, price, description} = art
+	// const {description} = art.description
 	let mainImage = images[0].fluid;
 	let imageDescription = images[0].description
 
@@ -22,12 +22,12 @@ const Artwork = ({art}) => {
 				<h3>{name}</h3>
 				<div className={styles.info}>
 					<h4 className={styles.country}>
-					<em>{description}</em>
+						<em>{description.description || ''}</em>
 					</h4>
-				<div className={styles.details}>
+					<div className={styles.details}>
 						<h6>${price || '100'}</h6>
 						<h6>{createdAt || '2019'}</h6>
-				</div>
+					</div>
 				</div>
 			</div>
 		</article>

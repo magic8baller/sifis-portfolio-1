@@ -4,15 +4,14 @@ import {FaAlignRight} from "react-icons/fa";
 import {mainLinks} from "../constants/links";
 // import socialIcons from "../constants/social-icons"
 import styles from "../css/navbar.module.css";
-import logo from "../images/logo2.png";
+import logo from "../images/logo_transparent.png";
 
 const Navbar = () => {
 	const [isOpen, setNav] = useState()
 	const toggleNav = () => {
 		setNav(isOpen => !isOpen)
 	}
-	// const mainLinks = links.slice(0, 4)
-	// console.log(mainLinks)
+
 	return (
 		<nav className={styles.navbar}>
 			<div className={styles.navCenter}>

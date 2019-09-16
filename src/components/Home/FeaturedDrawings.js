@@ -1,42 +1,15 @@
 
-import {graphql, useStaticQuery} from 'gatsby';
+// import {graphql, useStaticQuery} from 'gatsby';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import React from 'react';
 import styles from '../../css/items.module.css';
 import {Artwork} from '../Artwork';
+import {useDrawings} from '../hooks';
 import Title from '../StyledTitle';
 
-const getDrawings = graphql`
-query{
-		featuredArt:allContentfulGallery(filter:{medium:{eq:"drawing"}}){
-			edges{
-				node{
-					name
-					slug
-					featured
-					createdAt(formatString:"MMMM YYYY")
-					price
-					medium
-					contentful_id
-					description{
-						description
-					}
-
-					images{
-						description
-						fluid{
-								...GatsbyContentfulFluid
-						}
-					}
-				}
-			}
-		}
-	}
-`
-
 const FeaturedDrawings = () => {
-	const drawingsResponse = useStaticQuery(getDrawings)
-	const artworks = drawingsResponse.featuredArt.edges
+
+	const artworks = useDrawings()
 	return (
 		<section className={styles.tours}>
 			<Title title='featured' subtitle='artwork' />

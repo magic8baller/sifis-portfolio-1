@@ -12,7 +12,8 @@
   margin-top: 3rem;
 }
 .about-img {
-  position: relative;
+	position: relative;
+
 }
 
 .about-img img {
@@ -21,7 +22,8 @@
   box-shadow: var(--lightShadow);
 }
 .about-img div {
-  box-shadow: var(--lightShadow);
+	box-shadow: var(--lightShadow);
+
 }
 .about-info h4 {
   font-size: 1.9rem;

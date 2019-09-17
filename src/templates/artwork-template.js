@@ -57,7 +57,7 @@ const Template = ({data}) => {
 							back to gallery
           </AniLink>
 						<br /><br />
-						<AniLink fade to={`/${medium}`} className="btn-primary">
+						<AniLink fade to={`/${medium}s`} className="btn-primary">
 							back to {medium}s
           </AniLink>
 					</div>

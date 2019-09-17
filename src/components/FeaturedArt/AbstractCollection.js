@@ -1,14 +1,14 @@
-// import {graphql, useStaticQuery} from 'gatsby';
+
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import React from 'react';
 import styles from '../../css/items.module.css';
+import {useAbstract} from '../../hooks';
 import {Artwork} from '../Artwork';
 import Title from '../StyledTitle';
-import {useAbstract} from '../hooks/useAbstract'
 
 
 const AbstractCollection = () => {
-	// const abstractResponse = useStaticQuery(getAbstracts)
+
 	const artworks = useAbstract()
 	return (
 		<section className={styles.tours}>

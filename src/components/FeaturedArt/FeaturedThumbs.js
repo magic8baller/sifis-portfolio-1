@@ -1,11 +1,9 @@
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import React from 'react';
 import styles from '../../css/items.module.css';
+import {useThumbs} from '../../hooks';
 import {Thumb} from '../Artwork';
-import {useThumbs} from '../hooks';
-// import Collection from '../components/Home/Collection'
 import Title from '../StyledTitle';
-
 const FeaturedThumb = () => {
 
 	const artworks = useThumbs()

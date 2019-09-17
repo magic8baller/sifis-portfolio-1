@@ -1,6 +1,6 @@
 // import {graphql} from 'gatsby'
-import React, {Component} from "react"
-import FeaturedDigital from '../components/Home/FeaturedDigital'
+import React, { Component } from "react"
+import FeaturedDigital from '../components/FeaturedArt/FeaturedDigital'
 import Layout from "../components/Layout"
 // import StyledHero from '../components/StyledHero'
 // import Images from '../examples/Images'

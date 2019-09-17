@@ -1,12 +1,12 @@
+// import {graphql, useStaticQuery} from 'gatsby';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import React from 'react';
 import styles from '../../css/items.module.css';
+import {usePaintings} from '../../hooks/usePaintings';
 import {Artwork} from '../Artwork';
-// import {graphql, useStaticQuery} from 'gatsby'
-import {usePaintings} from '../hooks';
 import Title from '../StyledTitle';
+
 const FeaturedArt = () => {
-	// const paintingsResponse = useStaticQuery(getPaintings)
 	const artworks = usePaintings()
 	return (
 		<section className={styles.tours}>
@@ -23,26 +23,3 @@ const FeaturedArt = () => {
 
 
 export default FeaturedArt
-// const getPaintings = graphql`
-// query{
-// 		featuredArt:allContentfulGallery(filter:{medium:{eq:"painting"}}){
-// 			edges{
-// 				node{
-// 					name
-// 					description
-// 					slug
-// 					featured
-// 					createdAt
-// 					medium
-// 					contentful_id
-// 					images{
-// 						fluid{
-// 								...GatsbyContentfulFluid
-// 						}
-// 					}
-// 					collection
-// 				}
-// 			}
-// 		}
-// 	}
-// `

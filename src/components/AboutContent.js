@@ -10,10 +10,11 @@ export default function About () {
 	const aboutImage = useAboutImage()
 	const mainImage = aboutImage[0].node.images[0].fluid
 
+
 	return (
 
 		<section className={styles.about}>
-			<Title title='About Joseph Kalogerakis' subtitle='I paint and make dark digital art.' />
+			<Title title='About Joseph Kalogerakis' subtitle='Painter and versatile artist' />
 			<div className={styles.aboutCenter}>
 				<article className={styles.aboutImg}>
 					<div className={styles.imgContainer}>

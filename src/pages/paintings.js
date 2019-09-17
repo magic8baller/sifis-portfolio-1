@@ -1,17 +1,18 @@
-import React, { Component } from "react"
+import React, {Component} from "react"
 import FeaturedPaintings from '../components/FeaturedArt/FeaturedPaintings'
 import Layout from "../components/Layout"
 // import StyledHero from '../components/StyledHero'
 // import Images from '../examples/Images'
-
+import SEO from '../components/SEO'
 export default class Paintings extends Component {
-	render() {
+	render () {
 		return (
 
-	<Layout>
-		{/* <StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid} /> */}
-		<FeaturedPaintings />
-	</Layout>
+			<Layout>
+				<SEO title="Paintings" />
+				{/* <StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid} /> */}
+				<FeaturedPaintings />
+			</Layout>
 		)
 	}
 }

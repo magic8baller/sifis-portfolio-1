@@ -3,14 +3,15 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import React from "react";
 import Banner from "../components/Banner";
 import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 import StyledHero from "../components/StyledHero";
 
-// import About from "../components/About"
 export default ({data}) => (
 
 	<Layout>
+		<SEO title="Home" />
 		<StyledHero home='true' img={data.defaultBcg.childImageSharp.fluid}>
-			<Banner title='joseph kalogerakis' info='Painter and Digital Artist'>
+			<Banner title='joseph kalogerakis' info='Abstract and Classical Artist'>
 				<AniLink style={{margin: '1rem'}} fade to='/gallery' className='btn-white'>portfolio</AniLink>
 			</Banner>
 		</StyledHero>

@@ -11,10 +11,8 @@ module.exports = {
 		title: 'SifisPort1',
 		description: "Explore joseph kalogerakis' artwork",
 		author: "@magic8baller",
-		data: {
-			name: 'Leslie',
-			age: '30'
-		},
+		image: "./defaultBcg.jpg",
+		siteUrl: "https://iosifkalogerakis.com",
 	},
 	plugins: [{
 		resolve: `gatsby-source-filesystem`,
@@ -27,8 +25,10 @@ module.exports = {
 		resolve: `gatsby-source-contentful`,
 		options: {
 			spaceId: process.env.CONTENTFUL_SPACE_ID,
-			accessToken: 'H98CNsm2jLy_NPoayl3yI2G7UTPMQNQ5F45Zo_lJgcQ',
+			accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 		},
 
-	}, `gatsby-plugin-sass`, `gatsby-plugin-styled-components`, `gatsby-transformer-sharp`, `gatsby-plugin-sharp`, `gatsby-plugin-transition-link`, `gatsby-plugin-playground`],
+	}, `gatsby-plugin-sass`, `gatsby-plugin-styled-components`, `gatsby-transformer-sharp`, `gatsby-plugin-sharp`, `gatsby-plugin-transition-link`, `gatsby-plugin-playground`,
+		`gatsby-plugin-react-helmet`
+	],
 }

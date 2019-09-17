@@ -1,15 +1,15 @@
-// import {graphql} from 'gatsby'
-import React, { Component } from "react"
+import React, {Component} from "react"
 import FeaturedDigital from '../components/FeaturedArt/FeaturedDigital'
 import Layout from "../components/Layout"
 // import StyledHero from '../components/StyledHero'
 // import Images from '../examples/Images'
-
+import SEO from '../components/SEO'
 export default class Digital extends Component {
-	// console.log()
+
 	render () {
 		return (
 			<Layout>
+				<SEO title="Digital Art" />
 				{/* <StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid} /> */}
 				<FeaturedDigital />
 			</Layout>

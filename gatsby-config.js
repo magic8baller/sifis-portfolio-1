@@ -8,7 +8,7 @@ require("dotenv").config({
 })
 module.exports = {
 	siteMetadata: {
-		title: 'SifisPort1',
+		title: 'Joseph Kalogerakis',
 		description: "Explore joseph kalogerakis' artwork",
 		author: "@magic8baller",
 		image: "./defaultBcg.jpg",

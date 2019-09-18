@@ -4,7 +4,7 @@ import {FaAlignRight} from "react-icons/fa";
 import {mainLinks} from "../constants/links";
 // import socialIcons from "../constants/social-icons"
 import styles from "../css/navbar.module.css";
-import logo from "../images/logo_transparent.png";
+import logo from "../images/logo_transparent2.png";
 
 const Navbar = () => {
 	const [isOpen, setNav] = useState()
@@ -16,7 +16,7 @@ const Navbar = () => {
 		<nav className={styles.navbar}>
 			<div className={styles.navCenter}>
 				<div className={styles.navHeader}>
-					<AniLink swipe to='/'><img src={logo} style={{padding: '1rem 0', height: '20vh', width: '20vw'}} alt="logo" /></AniLink>
+					<AniLink swipe to='/'><img src={logo} style={{padding: '1rem 0', height: '30vh', width: '30vw', marginLeft: '-2rem'}} alt="logo" /></AniLink>
 					<button type="button" className={styles.logoBtn} onClick={toggleNav}>
 						<FaAlignRight className={styles.logoIcon} />
 					</button>

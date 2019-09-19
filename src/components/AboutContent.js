@@ -1,16 +1,16 @@
-import Image from 'gatsby-image';
 import React from 'react';
 import styles from '../css/about.module.css';
 import {useAboutImage} from '../hooks';
+import img from '../images/itsame.jpg';
 import AboutDetails from './AboutDetails';
 import Title from './StyledTitle';
-
+import Image from 'gatsby-image'
 export default function About () {
 
 	const aboutImage = useAboutImage()
 	const mainImage = aboutImage[0].node.images[0].fluid
 
-
+	// console.log(img)
 	return (
 
 		<section className={styles.about}>
@@ -19,6 +19,7 @@ export default function About () {
 				<article className={styles.aboutImg}>
 					<div className={styles.imgContainer}>
 						<Image fluid={mainImage} alt='bad ass mofo' />
+						{/* <img src={img} alt='waa' /> */}
 					</div>
 				</article>
 				<article className={styles.aboutInfo}>

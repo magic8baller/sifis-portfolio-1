@@ -16,7 +16,7 @@ const Navbar = () => {
 		<nav className={styles.navbar}>
 			<div className={styles.navCenter}>
 				<div className={styles.navHeader}>
-					<AniLink swipe to='/'><img src={logo} style={{padding: '1rem 0', height: '30vh', width: '30vw', marginLeft: '-2rem'}} alt="logo" /></AniLink>
+					<AniLink swipe to='/'><img src={logo} style={{padding: '0rem 0', position: 'relative', height: '30vh', width: '30vw'}} alt="logo" /></AniLink>
 					<button type="button" className={styles.logoBtn} onClick={toggleNav}>
 						<FaAlignRight className={styles.logoIcon} />
 					</button>

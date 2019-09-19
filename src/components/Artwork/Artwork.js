@@ -6,23 +6,23 @@ import React from 'react';
 import styles from '../../css/tour.module.css';
 const Artwork = ({art}) => {
 
-	const {name, slug, createdAt, medium, images, price, description} = art
+	const {name, slug, createdAt, medium, images, price, description:{description}} = art
 	// const {description} = art.description
 	let mainImage = images[0].fluid;
 	let imageDescription = images[0].description
-
+	console.log(images[0])
 	return (
 		<article className={styles.tour}>
 			<div className={styles.imgContainer}>
 				<Image fluid={mainImage} description={imageDescription} className={styles.img} alt='single artwork' />
 				<AniLink fade className={styles.link} to={
-					`/${medium + 's'}/${slug}`}>{imageDescription}</AniLink>
+					`/${medium + 's'}/${slug}`}>details</AniLink>
 			</div>
 			<div className={styles.footer}>
 				<h3>{name}</h3>
 				<div className={styles.info}>
 					<h4 className={styles.country}>
-						<em>{description.description || ''}</em>
+						<em>{description || ''}</em>
 					</h4>
 					<div className={styles.details}>
 						<h6>${price || '100'}</h6>

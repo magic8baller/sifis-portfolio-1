@@ -33,7 +33,7 @@
   letter-spacing: var(--mainSpacing);
   line-height: 2;
 }
-@media screen and (min-width: 992px){
+@media screen and (max-width: 992px){
 	.copyright {
 		letter-spacing: 0.01em;
 	}

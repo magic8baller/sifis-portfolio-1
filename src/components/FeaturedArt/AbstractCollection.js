@@ -11,7 +11,7 @@ const AbstractCollection = () => {
 
 	const artworks = useAbstract()
 	return (
-		<section className={styles.tours}>
+		<section className={styles.artworks}>
 			<Title title='featured' subtitle='artwork' />
 			<div className={styles.center}>
 				{artworks.map(({node}) => {

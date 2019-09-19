@@ -3,7 +3,7 @@ import Image from 'gatsby-image';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import PropTypes from 'prop-types';
 import React from 'react';
-import styles from '../../css/tour.module.css';
+import styles from '../../css/art.module.css';
 const Artwork = ({art}) => {
 
 	const {name, slug, createdAt, medium, images, price, description:{description}} = art
@@ -12,7 +12,7 @@ const Artwork = ({art}) => {
 	let imageDescription = images[0].description
 	console.log(images[0])
 	return (
-		<article className={styles.tour}>
+		<article className={styles.art}>
 			<div className={styles.imgContainer}>
 				<Image fluid={mainImage} description={imageDescription} className={styles.img} alt='single artwork' />
 				<AniLink fade className={styles.link} to={
@@ -21,7 +21,7 @@ const Artwork = ({art}) => {
 			<div className={styles.footer}>
 				<h3>{name}</h3>
 				<div className={styles.info}>
-					<h4 className={styles.country}>
+					<h4 className={styles.description}>
 						<em>{description || ''}</em>
 					</h4>
 					<div className={styles.details}>

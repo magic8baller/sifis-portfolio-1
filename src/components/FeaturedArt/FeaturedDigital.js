@@ -9,7 +9,7 @@ const FeaturedDigital = () => {
 
 	const artworks = useDigitals()
 	return (
-		<section className={styles.tours}>
+		<section className={styles.artworks}>
 			<Title title='featured' subtitle='artwork' />
 			<div className={styles.center}>
 				{artworks.map(({node}) => {

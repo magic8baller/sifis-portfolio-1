@@ -17,7 +17,7 @@ export default class ArtworkList extends Component {
 
 
   render() {
-    return (<section className={styles.tours}>
+    return (<section className={styles.artworks}>
 			<Title title='my' subtitle='art'/>
 			<div className={styles.center}>
 				{this.state.sortedArt.map(({node}) =><Artwork key={node.contentful_id} art={node}/>

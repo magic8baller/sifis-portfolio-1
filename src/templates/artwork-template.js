@@ -45,7 +45,7 @@ const Template = ({data}) => {
 					{/* <h4>duration : {days} days</h4> */}
 					{/* <p className={styles.desc}>{description}</p> */}
 					<h2>About This {aboutText}</h2>
-					<div className={styles.journey}>
+					<div className={styles.artinfo}>
 						{images.map((item, index) => {
 							return <ArtInfo key={index} info={item.description} item={item} />
 						})}

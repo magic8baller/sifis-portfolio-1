@@ -12,7 +12,7 @@ const AboutDetails = () => {
 	return (
 		<article>
 
-			<button type='button' className='btn-primary' onClick={toggleInfo}>read more</button>
+			<button type='button' aria-label='Read More' className='btn-primary' onClick={toggleInfo}>read more</button>
 
 			{showInfo && (<p style={{paddingTop: "2rem"}}>{dummyMoreInfo}</p>)}
 		</article>

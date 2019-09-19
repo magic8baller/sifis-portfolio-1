@@ -22,6 +22,7 @@ const Footer = () => {
 				{socialIcons.map((item, index) => {
 					return (
 						<a
+							aria-label="Social Media Link"
 							key={index}
 							href={item.url}
 							target="_blank"
@@ -35,7 +36,7 @@ const Footer = () => {
 			<div className={styles.copyright}>
 				copyright &copy; Joseph Kalogerakis {new Date().getFullYear()} all rights reserved
 				<br />
-				<small style={{fontSize: '0.6rem'}}><em>Made with <span aria-label='emoji heart' role="img">❤️</span><a style={{color: 'lightblue', fontSize: '0.9rem'}} href='https://reactjs.org'><FaReact /></a>  by Leslie Turis  <a style={{color: 'lightblue', fontSize: '0.9rem'}} href='https://github.com/magic8baller'><FaGithub /></a></em></small>
+				<small style={{fontSize: '0.6rem'}}><em>Made with <span aria-label='emoji heart' role="img">❤️</span><a aria-label="ReactJS Link" style={{color: 'lightblue', fontSize: '0.9rem'}} href='https://reactjs.org'><FaReact /></a>  by Leslie Turis  <a aria-label="Github Link" style={{color: 'lightblue', fontSize: '0.9rem'}} href='https://github.com/magic8baller'><FaGithub /></a></em></small>
 			</div>
 		</footer>
 	)

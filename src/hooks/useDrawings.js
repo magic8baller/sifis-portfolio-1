@@ -10,7 +10,7 @@ export const useDrawings = () => {
 							name
 							slug
 							featured
-							createdAt(formatString:"MMMM YYYY")
+							createdAt(formatString:"YYYY")
 							medium
 							price
 							description{

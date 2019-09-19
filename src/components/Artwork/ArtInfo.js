@@ -14,11 +14,11 @@ const ArtInfo = ({info}) => {
 		<article className={styles.day}>
 			<h4>
 				Details
-				<button style={{textAlign: "center"}} className={styles.btn} onClick={toggleInfo}>
+				<button aria-label='Arrow Icon' style={{textAlign: "center"}} className={styles.btn} onClick={toggleInfo}>
 					<FaAngleDown />
 				</button>
 			</h4>
-				{showInfo && <p>{isImageDescribed}</p>}
+			{showInfo && <p>{isImageDescribed}</p>}
 		</article>
 	)
 }

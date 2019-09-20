@@ -4,6 +4,9 @@
 	align-items: center;
 
 }
+
+
+
 .logo-btn {
   background: transparent;
   border: none;
@@ -45,6 +48,10 @@
 	padding-left: -5rem;
   margin-bottom: 3rem;
 }
+	.img {
+		height: 15%;
+		width: 25%;
+	}
 @media screen and (min-width: 576px) {
   .navbar {
 		padding: 0 2rem;
@@ -52,7 +59,20 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+
+	.img {
+height: 20%;
+width: 30%;
+	}
+}
+@media screen and (max-width: 992px) {
+	.navbar {
+		padding: 2rem;
+	}
+}
 @media screen and (min-width: 992px) {
+
   .logo-btn {
     display: none;
   }

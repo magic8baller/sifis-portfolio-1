@@ -34,7 +34,7 @@ const Footer = () => {
 				})}
 			</div>
 			<div className={styles.copyright}>
-				copyright &copy; Joseph Kalogerakis {new Date().getFullYear()} all rights reserved
+				copyright &copy; Iosif Kalogerakis {new Date().getFullYear()} all rights reserved
 				<br />
 				<small style={{fontSize: '0.6rem'}}><em>Made with <span aria-label='emoji heart' role="img">❤️</span><a aria-label="ReactJS Link" style={{color: 'lightblue', fontSize: '0.9rem'}} href='https://reactjs.org'><FaReact /></a>  by Leslie Turis  <a aria-label="Github Link" style={{color: 'lightblue', fontSize: '0.9rem'}} href='https://github.com/magic8baller'><FaGithub /></a></em></small>
 			</div>

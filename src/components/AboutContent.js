@@ -13,7 +13,7 @@ export default function About () {
 	console.log(aboutImage)
 	return (
 		<section className={styles.about}>
-			<Title title='About Joseph Kalogerakis' subtitle='Painter and versatile artist' />
+			<Title title='About Iosif Kalogerakis' subtitle='Painter and versatile artist' />
 			<div className={styles.aboutCenter}>
 				<article className={styles.aboutImg}>
 					<div className={styles.imgContainer}>

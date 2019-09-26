@@ -11,7 +11,7 @@ export default ({data}) => (
 	<Layout>
 		<SEO title="Home" />
 		<StyledHero home='true' img={data.defaultBcg.childImageSharp.fluid}>
-			<Banner title='joseph kalogerakis' info='Painter and Digital Artist'>
+			<Banner title='iosif kalogerakis' info='Painter and Digital Artist'>
 				<AniLink style={{margin: '1rem'}} fade to='/gallery' className='btn-white'>portfolio</AniLink>
 			</Banner>
 		</StyledHero>

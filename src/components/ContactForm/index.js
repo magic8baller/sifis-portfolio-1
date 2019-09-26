@@ -4,7 +4,7 @@ import Title from '../StyledTitle';
 const Contact = () => {
 	return (
 		<section className={styles.contact}>
-			<Title title='contact' subtitle='joseph' />
+			<Title title='contact' subtitle='iosif' />
 			<div className={styles.center}>
 
 				<form action="https://formspree.io/josagr2009@hotmail.com" method="POST" className={styles.form}>

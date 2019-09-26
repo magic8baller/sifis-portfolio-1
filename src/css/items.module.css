@@ -21,3 +21,8 @@
     max-width: 1170px;
   }
 }
+@media screen and (max-width: 768px){
+	.center {
+		justify-content: center;
+	}
+}

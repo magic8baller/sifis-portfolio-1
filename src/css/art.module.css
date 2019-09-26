@@ -5,13 +5,15 @@
 .art:hover {
   box-shadow: var(--darkShadow);
 }
-
 .img-container {
   position: relative;
   background: var(--primaryColor);
   transition: var(--mainTransition);
+  text-transform: capitalize;
 }
 .img {
+  height: 500px;
+  object-fit: contain;
   transition: var(--mainTransition);
 }
 .img-container:hover .img {
@@ -57,7 +59,6 @@
   align-items: center;
   margin-top: 0.5rem;
 }
-.info h6,
 .info h4 {
   margin-bottom: 0;
 }
@@ -72,6 +73,9 @@
 }
 .details {
   color: var(--darkGrey);
-  text-transform: uppercase;
   text-align: right;
 }
+@media screen and (max-width: 768px){
+	.img-container {
+		text-align:center;
+	}}

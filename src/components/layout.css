@@ -40,7 +40,7 @@ p {
   margin-bottom: 1.25rem;
 }
 .defaultHero {
-	min-height: calc(100vh - 62px);
+  min-height: calc(100vh - 62px);
 
   background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/sifis3.jpg") center/cover no-repeat;
@@ -75,7 +75,23 @@ p {
 }
 
 main {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-white,
+  .btn-primary {
+    padding: 0.9rem 0.4rem;
+    font-size: 0.8rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.9rem;
+  }
 }

@@ -14,7 +14,7 @@ const FeaturedThumb = () => {
 				{artworks.map(({node}) => {
 					return (<div><Thumb key={node.contentful_id} art={node} /></div>)
 				})}
-				{/* <CollectionThumb/> */}
+				
 			</div>
 			<AniLink fade to='/' className='btn-primary'>return home</AniLink>
 		</section>

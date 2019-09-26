@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import styles from '../css/title.module.css'
 const Title = ({title, subtitle}) => {
 	return (
 		<TitleWrapper>
@@ -17,6 +18,8 @@ margin-bottom:1rem;
 h1 {text-align: center; letter-spacing:7px; color: var(--mainWhite);}
 h3 {text-align: center; text-transform: capitalize;}
 .title {color: var(--primaryColor);}
-span {display: block;}
+span {display: block;
+
+}
 `
 export default Title;

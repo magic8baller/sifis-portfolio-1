@@ -28,7 +28,8 @@
   display: flex;
   align-items: center;
   margin-right: 2rem;
-  text-transform: capitalize;
+	text-transform: capitalize;
+	font-size: 0.8rem;
 }
 .icon {
   color: var(--primaryColor);

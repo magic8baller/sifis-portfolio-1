@@ -5,6 +5,7 @@ import {useDigitals} from '../../hooks';
 import {Artwork} from '../Artwork';
 import Title from '../StyledTitle';
 
+
 const FeaturedDigital = () => {
 
 	const artworks = useDigitals()

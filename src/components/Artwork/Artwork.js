@@ -27,11 +27,11 @@ const Artwork = ({art}) => {
 			<div className={styles.footer}>
 				<h3>{name}</h3>
 				<div className={styles.info}>
-					<h6 className={styles.description}>
+					<p className={styles.description}>
 						{mediumIcon}&nbsp;<em>{description || ''}</em>
-					</h6>
+					</p>
 					<div className={styles.details}>
-						<h6><FaCalendarAlt />&nbsp;{createdAt || '2019'}</h6>
+						<p><FaCalendarAlt />&nbsp;{createdAt || '2019'}</p>
 					</div>
 				</div>
 			</div>

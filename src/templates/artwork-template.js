@@ -12,7 +12,7 @@ const Template = ({data}) => {
 	if (medium === 'digital') {
 		mediumIcon = <FaApple className={styles.icon}/>
 	} else if (medium === 'drawing') {
-		mediumIcon = <FaPencilAlt className={styles.icon}/>
+		mediumIcon = <FaPencilAlt />
 	}
 	return (
 		<Layout>

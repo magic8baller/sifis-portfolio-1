@@ -1,11 +1,11 @@
 .error {
-  background: var(--primaryColor);
-  min-height: calc(100vh - 62px);
-  display: flex;
+  color: green;
+  height: 100%;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
 
 a {
-	font-size: 2rem;
+  font-size: 2rem;
 }

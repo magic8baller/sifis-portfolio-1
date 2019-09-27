@@ -1,24 +1,19 @@
-// import img from '../images/itsame.jpg';
-import Image from 'gatsby-image';
 import React from 'react';
 import styles from '../css/about.module.css';
-import {useAboutImage} from "../hooks/useAboutImage";
+import img from '../images/itsame.jpg';
 import AboutDetails from './AboutDetails';
 import Title from './StyledTitle';
+
 export default function About () {
 
-	const aboutImage = useAboutImage()
-	const mainImage = aboutImage[0].node.images[0].fluid
-
-	console.log(aboutImage)
 	return (
 		<section className={styles.about}>
 			<Title title='About Iosif Kalogerakis' subtitle='Painter and versatile artist' />
 			<div className={styles.aboutCenter}>
 				<article className={styles.aboutImg}>
 					<div className={styles.imgContainer}>
-						<Image fluid={mainImage} alt='bad ass mofo' />
-						{/* <img src={img} alt='badassmofo' /> */}
+						{/* <Image fluid={mainImage} alt='bad ass mofo' /> */}
+						<img src={img} alt='badassmofo' />
 					</div>
 				</article>
 				<article className={styles.aboutInfo}>

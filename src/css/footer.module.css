@@ -1,5 +1,5 @@
 .footer {
-	margin-top:auto;
+  margin-top: auto;
   background: var(--mainBlack);
   padding: 2rem;
   text-align: center;
@@ -31,20 +31,20 @@
 .copyright {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
-	line-height: 2;
-	font-size: 0.8rem;
+  line-height: 2;
+  font-size: 0.8rem;
 }
-	.text {
-		font-size: 1.2rem;
-	}
-@media screen and (max-width: 420px){
-	.copyright {
-		letter-spacing: 0.01em;
-	}
-	.text {
-		font-size: 1rem;
-	}
-	/* .links {
+.text {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 420px) {
+  .copyright {
+    letter-spacing: 0.01em;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  /* .links {
 		padding: -20px;
 
 	} */

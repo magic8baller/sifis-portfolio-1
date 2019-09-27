@@ -1,5 +1,4 @@
 import Image from 'gatsby-image';
-// import {FaMap} from 'react-icons/fa'
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import React from 'react';
 import styles from '../../css/art.module.css';

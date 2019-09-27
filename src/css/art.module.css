@@ -45,6 +45,7 @@
 }
 
 .footer {
+	text-transform:capitalize;
   padding: 1rem;
   text-align: left;
 }

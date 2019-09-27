@@ -81,11 +81,11 @@ main {
   flex-direction: column;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .btn-white,
   .btn-primary {
     padding: 0.9rem 0.4rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   h1,
   h2,

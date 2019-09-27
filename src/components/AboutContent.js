@@ -7,7 +7,7 @@ import Title from './StyledTitle';
 export default function About () {
 
 	return (
-		<section className={styles.about}>
+		<main className={styles.about}>
 			<Title title='About Iosif Kalogerakis' subtitle='Painter and versatile artist' />
 			<div className={styles.aboutCenter}>
 				<article className={styles.aboutImg}>
@@ -26,6 +26,6 @@ export default function About () {
 					<AboutDetails />
 				</article>
 			</div>
-		</section>
+		</main>
 	)
 }

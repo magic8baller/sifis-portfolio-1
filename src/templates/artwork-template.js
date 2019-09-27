@@ -2,7 +2,6 @@ import {graphql} from "gatsby";
 import Img from 'gatsby-image';
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import React from 'react';
-import {FaApple, FaPalette, FaPencilAlt} from "react-icons/fa";
 import Layout from "../components/Layout";
 import SEO from '../components/SEO';
 import styles from '../css/template.module.css';
@@ -12,8 +11,8 @@ const Template = ({data}) => {
 	return (
 		<Layout>
 			<SEO title={name} />
-			<section className={styles.template}>
-				<div className={styles.center}>
+			<main className={styles.template}>
+				<section className={styles.center}>
 					<div className={styles.images}>
 						{images.map((item, index) => {
 							return (
@@ -27,9 +26,7 @@ const Template = ({data}) => {
 						})}
 					</div>
 					<h2>{name}</h2>
-
 					<div style={{textAlign: "center", paddingTop: "6rem"}}>
-
 						<AniLink fade to="/gallery" className="btn-primary">
 							back to gallery
           </AniLink>
@@ -38,10 +35,8 @@ const Template = ({data}) => {
 							back to {medium}s
           </AniLink>
 					</div>
-
-
-				</div>
-			</section>
+				</section>
+			</main>
 		</Layout>
 
 	)

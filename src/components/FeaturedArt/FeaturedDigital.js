@@ -10,15 +10,15 @@ const FeaturedDigital = () => {
 
 	const artworks = useDigitals()
 	return (
-		<section className={styles.artworks}>
+		<main className={styles.artworks}>
 			<Title title='featured' subtitle='artwork' />
-			<div className={styles.center}>
+			<section className={styles.center}>
 				{artworks.map(({node}) => {
 					return <Artwork key={node.contentful_id} art={node} />
 				})}
-			</div>
+			</section>
 			<AniLink fade to='/gallery/' className='btn-primary'>return to gallery</AniLink>
-		</section>
+		</main>
 	)
 }
 

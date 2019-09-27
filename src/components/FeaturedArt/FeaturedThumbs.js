@@ -8,16 +8,16 @@ const FeaturedThumb = () => {
 
 	const artworks = useThumbs()
 	return (
-		<section className={styles.artworks}>
+		<main className={styles.artworks}>
 			<Title title='featured' subtitle='artwork' />
-			<div className={styles.center}>
+			<section className={styles.center}>
 				{artworks.map(({node}) => {
-					return (<div><Thumb key={node.contentful_id} art={node} /></div>)
+					return (<div key={node.contentful_id}><Thumb key={node.contentful_id} art={node} /></div>)
 				})}
-				
-			</div>
+
+			</section>
 			<AniLink fade to='/' className='btn-primary'>return home</AniLink>
-		</section>
+		</main>
 	)
 }
 

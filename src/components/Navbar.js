@@ -16,7 +16,7 @@ const Navbar = () => {
 		<nav className={styles.navbar}>
 			<div className={styles.navCenter}>
 				<div className={styles.navHeader}>
-					<AniLink swipe to='/'><img  className={styles.img} src={logo} aria-label='artist logo index link' alt="logo" /></AniLink>
+					<AniLink swipe to='/'><img className={styles.img} src={logo} aria-label='artist logo index link' alt="logo" /></AniLink>
 					<button type="button" aria-label="dropdown menu" className={styles.logoBtn} onClick={toggleNav}>
 						<FaAlignRight className={styles.logoIcon} />
 					</button>
@@ -36,20 +36,6 @@ const Navbar = () => {
 						)
 					})}
 				</ul>
-				{/* <div className={styles.navSocialLinks}>
-					{socialIcons.map((item, index) => {
-						return (
-							<a
-								key={index}
-								href={item.url}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								{item.icon}
-							</a>
-						)
-					})}
-				</div> */}
 			</div>
 		</nav>
 	)

@@ -6,7 +6,6 @@ const Contact = () => {
 		<section className={styles.contact}>
 			<Title title='contact' subtitle='iosif' />
 			<div className={styles.center}>
-
 				<form action="https://formspree.io/josagr2009@hotmail.com" method="POST" className={styles.form}>
 					<div>
 						<input type="text" name="_gotcha" style={{display: 'none'}} />

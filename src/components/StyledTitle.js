@@ -5,7 +5,7 @@ const Title = ({title, subtitle}) => {
 		<TitleWrapper>
 			<span>
 				<h1 className="title">{title}</h1>
-				<h4 className="subtitle">{subtitle}</h4></span>
+				<h3 className="subtitle">{subtitle}</h3></span>
 		</TitleWrapper>
 	)
 }
@@ -15,7 +15,7 @@ font-size:2.3rem;
 padding: 0.5rem;
 margin-bottom:1rem;
 h1 {text-align: center; letter-spacing:7px; color: var(--mainWhite); margin-bottom: 0.5rem; font-size: 3rem;}
-h4 {text-align: center; text-transform: capitalize; margin-top: 2rem; font-size: 1.5rem;}
+h3 {text-align: center; text-transform: capitalize; margin-top: 1rem; }
 .title {color: var(--primaryColor);}
 span {display: block;
 

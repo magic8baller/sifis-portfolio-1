@@ -2,18 +2,13 @@ import {graphql} from "gatsby";
 import Img from 'gatsby-image';
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import React from 'react';
-import {FaCalendarAlt, FaPalette, FaApple, FaPencilAlt} from "react-icons/fa";
+import {FaApple, FaPalette, FaPencilAlt} from "react-icons/fa";
 import Layout from "../components/Layout";
 import SEO from '../components/SEO';
 import styles from '../css/template.module.css';
 const Template = ({data}) => {
-	const {medium, name, images, createdAt, description: {description}} = data.artworks
-	let mediumIcon = <FaPalette className={styles.icon}/>
-	if (medium === 'digital') {
-		mediumIcon = <FaApple className={styles.icon}/>
-	} else if (medium === 'drawing') {
-		mediumIcon = <FaPencilAlt />
-	}
+	const {medium, name, images} = data.artworks
+
 	return (
 		<Layout>
 			<SEO title={name} />
@@ -32,16 +27,7 @@ const Template = ({data}) => {
 						})}
 					</div>
 					<h2>{name}</h2>
-					<div className={styles.info}>
-						<p>
-							<FaCalendarAlt className={styles.icon} />
-							{createdAt}
-						</p>
-						<p>
-							{mediumIcon}
-							{description}
-						</p>
-					</div>
+
 					<div style={{textAlign: "center", paddingTop: "6rem"}}>
 
 						<AniLink fade to="/gallery" className="btn-primary">
@@ -56,11 +42,6 @@ const Template = ({data}) => {
 
 				</div>
 			</section>
-			{/*
-				<h1>{name}</h1>
-				<Image key={contentful_id} alt={`${medium}: ${name}`}fluid={images[0].fluid} />
-				<br />
-				{createdAt} */}
 		</Layout>
 
 	)
@@ -71,7 +52,6 @@ export const query = graphql`
 			artworks:contentfulGallery(slug: {eq: $slug}) {
 						name
 						slug
-						price
 						medium
 						contentful_id
 						collection

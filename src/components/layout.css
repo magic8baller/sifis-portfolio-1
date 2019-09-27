@@ -59,6 +59,7 @@ p {
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
+  font-size: 1.3rem;
 }
 .btn-white:hover {
   background: var(--mainWhite);

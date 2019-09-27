@@ -34,6 +34,7 @@
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
+  font-size: 1.5rem;
 }
 .link:hover {
   background: var(--mainWhite);
@@ -48,14 +49,13 @@
   text-align: left;
 }
 .footer h3 {
-  text-transform: capitalize;
+	text-transform:capitalize;
   margin-bottom: 0;
 }
 .info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  text-transform: uppercase;
   align-items: center;
   margin-top: 0.5rem;
 }
@@ -63,7 +63,7 @@
   margin-bottom: 0;
 }
 .description {
-  text-transform: capitalize;
+  /* text-transform: none; */
   color: var(--primaryColor);
   display: flex;
   align-items: center;
@@ -75,7 +75,8 @@
   color: var(--darkGrey);
   text-align: right;
 }
-@media screen and (max-width: 768px){
-	.img-container {
-		text-align:center;
-	}}
+@media screen and (max-width: 768px) {
+  .img-container {
+    text-align: center;
+  }
+}

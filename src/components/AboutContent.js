@@ -12,7 +12,6 @@ export default function About () {
 			<div className={styles.aboutCenter}>
 				<article className={styles.aboutImg}>
 					<div className={styles.imgContainer}>
-						{/* <Image fluid={mainImage} alt='bad ass mofo' /> */}
 						<img src={img} alt='badassmofo' />
 					</div>
 				</article>

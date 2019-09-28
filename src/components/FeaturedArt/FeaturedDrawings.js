@@ -12,7 +12,7 @@ const FeaturedDrawings = () => {
 
 	return (
 		<main className={styles.artworks}>
-			<Title title='featured' subtitle='artwork' />
+			<Title title='featured' subtitle='drawings' />
 			<section className={styles.center}>
 				{artworks.map(({node}) => {
 					return <Artwork key={node.contentful_id} art={node} />

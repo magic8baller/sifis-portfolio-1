@@ -12,7 +12,7 @@ const AbstractCollection = () => {
 	const artworks = useAbstract()
 	return (
 		<main className={styles.artworks}>
-			<Title title='featured' subtitle='artwork' />
+			<Title title='abstract' subtitle='collection' />
 			<section className={styles.center}>
 				{artworks.map(({node}) => {
 					return <Artwork key={node.contentful_id} art={node} />

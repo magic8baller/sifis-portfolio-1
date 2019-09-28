@@ -13,7 +13,7 @@ export const usePaintings = () => {
 							}
 							slug
 							featured
-						  createdAt(formatString:"YYYY")
+						  completed(formatString:"MMM YYYY")
 							medium
 							contentful_id
 							images{

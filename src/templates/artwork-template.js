@@ -53,7 +53,7 @@ export const query = graphql`
 						description{
 							description
 						}
-						createdAt(formatString:"MMM YYYY")
+						completed(formatString:"MMM YYYY")
 						images {
 							description
 							fluid {

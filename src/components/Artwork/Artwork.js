@@ -6,7 +6,7 @@ import {FaApple, FaCalendarAlt, FaPalette, FaPencilAlt} from 'react-icons/fa';
 import styles from '../../css/art.module.css';
 
 const Artwork = ({art}) => {
-	const {name, slug, createdAt, medium, images, description: {description}} = art
+	const {name, slug, completed, medium, images, description: {description}} = art
 
 	let mainImage = images[0].fluid;
 	let imageDescription = images[0].description
@@ -31,7 +31,7 @@ const Artwork = ({art}) => {
 						{mediumIcon}&nbsp;<em>{description || ''}</em>
 					</p>
 					<div className={styles.details}>
-						<p><FaCalendarAlt />&nbsp;{createdAt || '2019'}</p>
+						<p><FaCalendarAlt />&nbsp;{completed}</p>
 					</div>
 				</div>
 			</div>

@@ -10,7 +10,7 @@ export const useThumbs = () => {
 							name
 							slug
 							featured
-							createdAt
+							completed
 							medium
 							contentful_id
 							images{

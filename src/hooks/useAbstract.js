@@ -10,7 +10,7 @@ export const useAbstract = () => {
 								name
 								slug
 								featured
-								createdAt(formatString:"YYYY")
+								completed(formatString:"MMM YYYY")
 								medium
 								price
 								description{

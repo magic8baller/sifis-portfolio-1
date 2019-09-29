@@ -12,7 +12,7 @@
   text-transform: capitalize;
 }
 .img {
-  height: 500px;
+  height: 400px;
   object-fit: contain;
   transition: var(--mainTransition);
 }
@@ -45,12 +45,12 @@
 }
 
 .footer {
-	text-transform:capitalize;
+  text-transform: capitalize;
   padding: 1rem;
   text-align: left;
 }
 .footer h3 {
-	text-transform:capitalize;
+  text-transform: capitalize;
   margin-bottom: 0;
 }
 .info {
@@ -79,5 +79,8 @@
 @media screen and (max-width: 768px) {
   .img-container {
     text-align: center;
+  }
+  .img {
+    height: 250px;
   }
 }

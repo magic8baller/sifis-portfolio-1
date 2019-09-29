@@ -21,8 +21,11 @@
     max-width: 1170px;
   }
 }
-@media screen and (max-width: 768px){
-	.center {
-		justify-content: center;
-	}
+@media screen and (max-width: 768px) {
+  .center {
+    justify-content: center;
+  }
+  a {
+    margin: 0 auto;
+  }
 }

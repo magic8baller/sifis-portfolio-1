@@ -10,6 +10,10 @@
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 }
+
+  a {
+    margin: 0 auto;
+  }
 @media screen and (min-width: 576px) {
   .center {
     grid-template-columns: repeat(auto-fill, minmax(368.66px, 1fr));
@@ -25,7 +29,5 @@
   .center {
     justify-content: center;
   }
-  a {
-    margin: 0 auto;
-  }
+
 }

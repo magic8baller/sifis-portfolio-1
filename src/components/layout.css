@@ -60,7 +60,6 @@ p {
   transition: var(--mainTransition);
   cursor: pointer;
   font-size: 1.3rem;
-  margin: 0 auto;
 }
 .btn-white:hover {
   background: var(--mainWhite);

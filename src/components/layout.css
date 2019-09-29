@@ -9,7 +9,7 @@
   --darkGrey: #cfcfcf;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 4px;
-  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --lightShadow: 2px 5px 3px 1px rgba(0, 0, 0, 0.692);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -93,7 +93,7 @@ main {
   h4,
   h5,
   h6 {
-    font-size: 1.9rem;
+    font-size: 1.3rem;
   }
   p {
     font-size: 0.8rem;

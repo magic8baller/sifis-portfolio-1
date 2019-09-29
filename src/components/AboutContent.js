@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../css/about.module.css';
-import img from '../images/itsame.jpg';
+import img from '../images/youngin.jpg';
 import AboutDetails from './AboutDetails';
 import Title from './StyledTitle';
 

@@ -20,5 +20,11 @@ h3 {text-align: center; text-transform: capitalize; margin-top: 1rem; }
 span {display: block;
 
 }
+@media screen and (max-width: 768px) {
+	h1 {font-size:2rem;}
+	h3 {font-size:1rem;}
+
+}
+
 `
 export default Title;

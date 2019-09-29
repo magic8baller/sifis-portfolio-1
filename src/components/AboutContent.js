@@ -8,15 +8,14 @@ export default function About () {
 
 	return (
 		<main className={styles.about}>
-			<Title title='About Iosif Kalogerakis' subtitle='Painter and versatile artist' />
+			<Title title='About Iosif Kalogerakis' />
 			<div className={styles.aboutCenter}>
 				<article className={styles.aboutImg}>
 					<div className={styles.imgContainer}>
-						<img src={img} alt='badassmofo' />
+						<img src={img} alt='sifis drawing' />
 					</div>
 				</article>
 				<article className={styles.aboutInfo}>
-					<h4>meet the artist</h4>
 					<p>Describing an artist is a difficult task and I have to admit, that I would prefer if you, dear reader, would just look at the artwork itself and let <em>it</em> do the describing, not <em>me.</em></p>
 					<p>
 						Okay I get it, you are still here for the Information. But before I tell you the little that I know about the subject of your interest I have to confess I am not an author free of all sorts of bias, rather quite the opposite and perhaps a liar too.

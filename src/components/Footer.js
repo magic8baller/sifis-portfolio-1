@@ -1,6 +1,5 @@
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import React from "react";
-import {FaGithub, FaReact} from 'react-icons/fa';
 import {mainLinks} from "../constants/links";
 import socialIcons from "../constants/social-icons";
 import styles from "../css/footer.module.css";
@@ -36,7 +35,7 @@ const Footer = () => {
 			<div className={styles.copyright}>
 				copyright &copy; Iosif Kalogerakis {new Date().getFullYear()} all rights reserved
 				<br />
-				<small style={{fontSize: '0.6rem'}}><em>Made with <span aria-label='emoji heart' role="img">❤️</span><a aria-label="ReactJS Link" style={{color: 'lightblue', fontSize: '0.9rem'}} href='https://reactjs.org'><FaReact /></a>  by Leslie Turis  <a aria-label="Github Link" style={{color: 'lightblue', fontSize: '0.9rem'}} href='https://github.com/magic8baller'><FaGithub /></a></em></small>
+				<small style={{fontSize: '0.6rem'}}><em>Made with <span aria-label='emoji heart' role="img">❤️</span> by Leslie Turis</em></small>
 			</div>
 		</footer>
 	)

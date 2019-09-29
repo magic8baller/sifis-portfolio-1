@@ -20,7 +20,7 @@ const Navbar = () => {
 					<button type="button" aria-label="dropdown menu" className={styles.logoBtn} onClick={toggleNav}>
 						<FaAlignRight className={styles.logoIcon} />
 					</button>
-					<div className="clear-fix"></div>
+					<div className={styles.clearFix}></div>
 				</div>
 				<ul
 					className={
@@ -32,7 +32,7 @@ const Navbar = () => {
 					{mainLinks.map((item, index) => {
 						return (
 							<li key={index}>
-								<AniLink swipe to={item.path} style={{fontSize: '1rem'}}>{item.text}</AniLink>
+								<AniLink swipe to={item.path} className={styles.linkText}>{item.text}</AniLink>
 							</li>
 						)
 					})}

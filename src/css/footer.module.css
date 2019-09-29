@@ -30,7 +30,7 @@
 }
 .copyright {
   text-transform: capitalize;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: var(--smallSpacing);
   line-height: 2;
   font-size: 0.8rem;
 }
@@ -39,14 +39,12 @@
 }
 @media screen and (max-width: 420px) {
   .copyright {
-    letter-spacing: 0.01em;
+    letter-spacing: 0.005em;
   }
   .text {
 		font-size: 0.8rem;
   }
   .links {
 		line-height: .5rem;
-		/* padding: -20px; */
-
 	}
 }

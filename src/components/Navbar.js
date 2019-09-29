@@ -20,6 +20,7 @@ const Navbar = () => {
 					<button type="button" aria-label="dropdown menu" className={styles.logoBtn} onClick={toggleNav}>
 						<FaAlignRight className={styles.logoIcon} />
 					</button>
+					<div className="clear-fix"></div>
 				</div>
 				<ul
 					className={

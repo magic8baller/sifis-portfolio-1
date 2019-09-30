@@ -8,8 +8,8 @@
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
   --mainTransition: all 0.3s linear;
-	--mainSpacing: 4px;
-	--smallSpacing: 2px;
+  --mainSpacing: 4px;
+  --smallSpacing: 2px;
   --lightShadow: 4px 6px 5px 3px rgba(0, 0, 0, 0.692);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
@@ -98,6 +98,6 @@ main {
     font-size: 1.3rem;
   }
   p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }

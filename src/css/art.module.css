@@ -45,7 +45,6 @@
 }
 
 .footer {
-  text-transform: capitalize;
   padding: 1rem;
   text-align: left;
 }
@@ -64,7 +63,6 @@
   margin-bottom: 0;
 }
 .description {
-  /* text-transform: none; */
   color: var(--primaryColor);
   display: flex;
   align-items: center;

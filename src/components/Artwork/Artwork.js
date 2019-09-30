@@ -6,7 +6,7 @@ import {FaApple, FaCalendarAlt, FaPalette, FaPencilAlt} from 'react-icons/fa';
 import styles from '../../css/art.module.css';
 
 const Artwork = ({art}) => {
-	const {name, slug, completed, medium, images, description: {description}} = art
+	const {name, slug, completed, medium, images, collection, description: {description}} = art
 
 	let mainImage = images[0].fluid;
 	let imageDescription = images[0].description
@@ -22,7 +22,7 @@ const Artwork = ({art}) => {
 			<div className={styles.imgContainer} >
 				<Image fluid={mainImage} description={imageDescription} className={styles.img} alt='single artwork' />
 				<AniLink fade className={styles.link} to={
-					`/${medium + 's'}/${slug}`}>expand</AniLink>
+					`/${collection + 's'}/${slug}`}>expand</AniLink>
 			</div>
 			<div className={styles.footer}>
 				<h3>{name}</h3>

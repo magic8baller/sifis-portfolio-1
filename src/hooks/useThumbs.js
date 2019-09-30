@@ -13,6 +13,7 @@ export const useThumbs = () => {
 							completed
 							medium
 							contentful_id
+							collection
 							images{
 
 								fluid{

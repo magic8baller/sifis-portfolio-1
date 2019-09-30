@@ -4,7 +4,7 @@ export const usePaintings = () => {
 	const {featuredArt} = useStaticQuery(
 		graphql`
 			query{
-				featuredArt: allContentfulGallery(filter: {medium: {eq: "painting"}}){
+				featuredArt: allContentfulGallery(filter: {collection: {eq: "painting"}}){
 					edges{
 						node{
 							name
@@ -16,6 +16,7 @@ export const usePaintings = () => {
 						  completed(formatString:"MMM YYYY")
 							medium
 							contentful_id
+							collection
 							images{
 								description
 								fluid{

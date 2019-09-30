@@ -1,6 +1,6 @@
 // import {graphql} from 'gatsby'
 import React, {Component} from "react"
-import AbstractCollection from '../components/FeaturedArt/AbstractCollection'
+import {AbstractCollection} from '../components/FeaturedArt'
 import Layout from "../components/Layout"
 import SEO from '../components/SEO'
 export default class Abstract extends Component {

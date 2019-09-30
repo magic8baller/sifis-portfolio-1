@@ -1,5 +1,5 @@
 import React from 'react';
-import FeaturedThumbs from '../components/FeaturedArt/FeaturedThumbs';
+import {FeaturedThumbs} from '../components/FeaturedArt';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 

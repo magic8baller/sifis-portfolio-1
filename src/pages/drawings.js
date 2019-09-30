@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import FeaturedDrawings from '../components/FeaturedArt/FeaturedDrawings'
+import {FeaturedDrawings} from '../components/FeaturedArt'
 import Layout from "../components/Layout"
 // import StyledHero from '../components/StyledHero'
 // import Images from '../examples/Images'

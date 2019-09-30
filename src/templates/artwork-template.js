@@ -28,11 +28,11 @@ const Template = ({data}) => {
 					<h2>{name}</h2>
 					<div style={{textAlign: "center", paddingTop: "6rem"}}>
 						<AniLink fade to="/gallery" className="btn-primary">
-							back to gallery
+							return to gallery
           </AniLink>
 						<br /><br />
 						<AniLink fade to={`/${medium}s`} className="btn-primary">
-							back to {medium}s
+							return to {medium}s
           </AniLink>
 					</div>
 				</section>

@@ -16,11 +16,7 @@ export default function About () {
 					</div>
 				</article>
 				<article className={styles.aboutInfo}>
-					<p>Describing an artist is a difficult task and I have to admit, that I would prefer if you, dear reader, would just look at the artwork itself and let <em>it</em> do the describing, not <em>me.</em></p>
-					<p>
-						Okay I get it, you are still here for the Information. But before I tell you the little that I know about the subject of your interest I have to confess I am not an author free of all sorts of bias, rather quite the opposite and perhaps a liar too.
-						I once heard Joseph say "nothing is so common than the wish to be remarkable", err wait, no, Shakespeare said that; Joseph said something like, "when I make art, it comes from a dark place deep inside me and I can find no words to describe it".
-</p>
+				<p><em>Crete-based painter and digital artist who loves to create art that makes the viewer feel vulnerable.</em></p>
 
 					<AboutDetails />
 				</article>

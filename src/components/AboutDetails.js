@@ -14,6 +14,11 @@ const AboutDetails = () => {
 			<button type='button' aria-label='Read More' className='btn-primary' onClick={toggleInfo}>read more</button>
 
 			{showInfo && (<p style={{paddingTop: "2rem"}}>
+			<p>Describing an artist is a difficult task and I have to admit, that I would prefer if you, dear reader, would just look at the artwork itself and let <em>it</em> do the describing, not <em>me.</em></p>
+					<p>
+						Okay I get it, you are still here for the Information. But before I tell you the little that I know about the subject of your interest I have to confess I am not an author free of all sorts of bias, rather quite the opposite and perhaps a liar too.
+						I once heard Joseph say "nothing is so common than the wish to be remarkable", err wait, no, Shakespeare said that; Joseph said something like, "when I make art, it comes from a dark place deep inside me and I can find no words to describe it".
+</p>
 				<p>
 					I once found myself at a <em>συμπόσιον</em> with our fellow artist and some friends, debating the value of naming his artworks, because this was a task Joseph had neglected so far. After a good amount of alcohol had entered into- and countless words had came out of- the mouths of the participants, Joseph remained unconvinced by the orators rhethoric, refused to decide on the matter and, thus the art still remains untitled.
 					When I asked one of his friends for the reason of his undecidefulness on the matter, he told me:

@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 import SEO from '../components/SEO';
 import styles from '../css/template.module.css';
 const Template = ({data}) => {
-	const {medium, name, images} = data.artworks
+	const {medium, name, images, collection} = data.artworks
 
 	return (
 		<Layout>
@@ -31,8 +31,8 @@ const Template = ({data}) => {
 							return to gallery
           </AniLink>
 						<br /><br />
-						<AniLink fade to={`/${medium}s`} className="btn-primary">
-							return to {medium}s
+						<AniLink fade to={`/${collection}s`} className="btn-primary">
+							return to {collection}s
           </AniLink>
 					</div>
 				</section>

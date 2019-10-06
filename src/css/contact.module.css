@@ -6,6 +6,9 @@
   margin: 0 auto;
   text-align: left;
 }
+.formControl {
+  margin-top: 0.4rem;
+}
 @media screen and (min-width: 992px) {
   .center {
     width: 50vw;

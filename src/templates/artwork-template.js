@@ -27,7 +27,7 @@ const Template = ({data}) => {
 						})}
 					</div>
 					<h2>{name}</h2>
-					<div style={{textAlign: "center", paddingTop: "6rem"}}>
+					<div className={styles.links}>
 						<AniLink fade to="/gallery" className="btn-primary">
 							return to gallery
           </AniLink>

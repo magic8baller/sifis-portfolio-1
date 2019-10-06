@@ -20,7 +20,7 @@
   letter-spacing: var(--mainSpacing);
   margin-bottom: 1rem;
 }
-.info {
+/* .info {
   display: flex;
   flex-wrap: wrap;
 }
@@ -29,29 +29,27 @@
   align-items: center;
   margin-right: 2rem;
   font-size: 0.8rem;
-}
-.icon {
+} */
+/* .icon {
   color: var(--primaryColor);
   font-size: 1.4rem;
   margin-right: 0.5rem;
-}
-
-.template h4 {
-  text-transform: capitalize;
-}
+} */
 .template h2 {
   margin: 2rem 0;
   font-style: italic;
 }
-.artinfo {
-  margin: 3rem 0;
+.links {
+  /* margin: 3rem 0; */
+  text-align: center;
+  padding-top: 6rem;
 }
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   .artinfo,
   .desc {
     width: 70vw;
   }
-}
+} */
 @media screen and (min-width: 1200px) {
   .center {
     width: 95vw;

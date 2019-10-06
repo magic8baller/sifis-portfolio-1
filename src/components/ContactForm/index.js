@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaEnvelopeOpenText, FaRegUser, FaUserEdit} from 'react-icons/fa';
+import {FaRegComment, FaRegEnvelope, FaRegUser} from 'react-icons/fa';
 import styles from '../../css/contact.module.css';
 import Title from '../StyledTitle';
 // FaRegularPaperPlane,
@@ -15,11 +15,11 @@ const Contact = () => {
 						<input type="text" name='name' id='name' className={styles.formControl} />
 					</div>
 					<div>
-						<FaEnvelopeOpenText />&nbsp;<label htmlFor='email'>Email</label>
+						<FaRegEnvelope />&nbsp;<label htmlFor='email'>Email</label>
 						<input type="email" name='email' id='email' className={styles.formControl} />
 					</div>
 					<div>
-						<FaUserEdit />&nbsp;<label htmlFor='message'>Message</label>
+						<FaRegComment />&nbsp;&nbsp;<label htmlFor='message'>Message</label>
 						<textarea name='message' id='message' rows='10' className={styles.formControl} />
 					</div>
 					<div>

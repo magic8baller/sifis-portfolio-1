@@ -14,17 +14,32 @@ text-transform: uppercase;
 font-size:2.3rem;
 padding: 0.5rem;
 margin-bottom:1rem;
-h1 {text-align: center; letter-spacing:7px; color: var(--mainWhite); margin-bottom: 0.5rem; font-size: 3rem;}
-h3 {text-align: center; text-transform: capitalize; margin-top: 1rem; }
-.title {color: var(--primaryColor);}
-span {display: block;
-
+h1 {
+	text-align: center;
+	letter-spacing:7px;
+	color: var(--mainWhite);
+	margin-bottom: 0.5rem;
+	font-size: 3rem;
+}
+h3 {
+	text-align: center;
+	text-transform: capitalize;
+	margin-top: 1rem;
+}
+.title {
+	color: var(--primaryColor);
+}
+span {
+	display: block;
 }
 @media screen and (max-width: 768px) {
-	h1 {font-size:1.8rem;}
-	h3 {font-size:1rem;}
-
+	h1 {
+		font-size:1.6rem;
+	}
+	h3 {
+		font-size:1rem;
+	}
+	padding-top:1.4rem;
 }
-
 `
 export default Title;

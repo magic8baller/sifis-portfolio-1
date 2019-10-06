@@ -79,6 +79,14 @@
   .img {
     width: 26%;
   }
+  .navbar {
+    padding: 0 1.8rem 4rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .navbar {
+    padding-bottom: 5rem;
+  }
 }
 @media screen and (min-width: 501px) {
   .logo-icon {
@@ -91,7 +99,8 @@
 
 @media screen and (max-width: 992px) {
   .navbar {
-    padding: 0 2rem;
+    /* padding-bottom: 0rem; */
+    margin-bottom: -6rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -134,5 +143,8 @@
   .nav-social-links a:hover {
     color: var(--mainBlack);
     transform: translateY(-5px);
+  }
+  .navbar {
+    margin-bottom: 1rem;
   }
 }

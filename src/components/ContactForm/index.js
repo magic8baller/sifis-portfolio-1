@@ -11,11 +11,11 @@ const Contact = () => {
 				<form action="https://formspree.io/josagr2009@hotmail.com" method="POST" className={styles.form}>
 					<div>
 						<input type="text" name="_gotcha" style={{display: 'none'}} />
-						<FaRegUser />&nbsp;<label htmlFor='name'>Name</label>
+						<FaRegUser />&nbsp;&nbsp;<label htmlFor='name'>Name</label>
 						<input type="text" name='name' id='name' className={styles.formControl} />
 					</div>
 					<div>
-						<FaRegEnvelope />&nbsp;<label htmlFor='email'>Email</label>
+						<FaRegEnvelope />&nbsp;&nbsp;<label htmlFor='email'>Email</label>
 						<input type="email" name='email' id='email' className={styles.formControl} />
 					</div>
 					<div>

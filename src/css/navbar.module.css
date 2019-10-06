@@ -55,10 +55,10 @@
 .img {
   /* height: 12%; */
   font-size: 3rem;
-  /* width: 42%; */
+  width: 15%;
   height: 20%;
   margin-top: 1rem;
-  width: 15%;
+
   margin-left: 0%;
   padding-top: 3%;
 }
@@ -75,6 +75,9 @@
   }
   a.link-text {
     font-size: 0.7rem;
+  }
+  .img {
+    width: 23%;
   }
 }
 @media screen and (min-width: 501px) {
@@ -95,14 +98,17 @@
   .logo-icon {
     font-size: 2rem;
   }
-  /* .img {
+  .img {
     margin-top: 1rem;
     width: 15%;
-  } */
+  }
 }
 @media screen and (min-width: 992px) {
   .logo-btn {
     display: none;
+  }
+  .img {
+    width: 25%;
   }
   .nav-center {
     max-width: 1170px;

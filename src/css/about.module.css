@@ -3,27 +3,21 @@
   margin: 0 auto;
 }
 .about-img {
-  margin: 3rem 0;
-}
-.about-info {
-  margin-top: 3rem;
-}
-
-.about-img {
   position: relative;
 }
-
+.about-img div {
+  box-shadow: var(--lightShadow);
+}
 .about-img img {
   width: 100%;
   display: block;
   box-shadow: var(--lightShadow);
 }
-.about-img div {
-  box-shadow: var(--lightShadow);
+.about-info {
+  margin-top: 3rem;
 }
-.about-info h4 {
-  font-size: 1.9rem;
-  text-transform: uppercase;
+.about-info p {
+  margin: 3rem 0;
 }
 
 @media screen and (min-width: 768px) {

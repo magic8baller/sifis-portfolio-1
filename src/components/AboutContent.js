@@ -17,7 +17,6 @@ export default function About () {
 				</article>
 				<article className={styles.aboutInfo}>
 					<p><em>Crete-based painter and digital artist who loves to explore dark perspectives.</em></p>
-
 					<AboutDetails />
 				</article>
 			</div>

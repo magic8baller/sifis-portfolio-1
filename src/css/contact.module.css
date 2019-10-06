@@ -3,8 +3,8 @@
 }
 .center {
   width: 80vw;
-	margin: 0 auto;
-	text-align: center;
+  margin: 0 auto;
+  text-align: left;
 }
 @media screen and (min-width: 992px) {
   .center {
@@ -19,7 +19,7 @@
   margin-bottom: 1rem;
   padding: 0.375rem 0.75rem;
   border: 1px solid var(--darkGrey);
-  border-radius: 0.25rem;
+  border-radius: 0.8rem;
 }
 .submit {
   background-color: var(--primaryColor);

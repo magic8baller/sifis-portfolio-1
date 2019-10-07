@@ -8,7 +8,7 @@ const Contact = ({data}) => {
 	return (
 		<Layout>
 			<SEO title="Contact" />
-			<StyledHero img={data.contactBcg.childImageSharp.fluid} />
+			<StyledHero img={data.portBcg.childImageSharp.fluid} />
 			<ContactForm />
 		</Layout>
 	)
@@ -18,7 +18,7 @@ export default Contact
 
 export const query = graphql`
 	query {
-		contactBcg: file(relativePath: {eq: "port-night-2.jpeg"}){
+		portBcg: file(relativePath: {eq: "port-night-2.jpeg"}){
 			childImageSharp{
 				fluid(quality: 90, maxWidth: 4160){
 				...GatsbyImageSharpFluid_withWebp

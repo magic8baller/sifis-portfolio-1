@@ -19,4 +19,11 @@ opacity: 1 !important;
 display: flex;
 justify-content: center;
 align-items: center;
+margin-top: 5rem;
+/* @media screen and (max-width:400px){
+	margin-top: 3rem;
+	} */
+@media screen and (max-width: 767px){
+	margin-top: 3rem;
+	}
 `

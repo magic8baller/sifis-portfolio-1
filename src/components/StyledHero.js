@@ -19,11 +19,17 @@ opacity: 1 !important;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-top: 5rem;
-/* @media screen and (max-width:400px){
-	margin-top: 3rem;
-	} */
+margin-top: 1rem;
+@media screen and (min-width:992px){
+	margin-top: 2.5rem;
+	}
 @media screen and (max-width: 767px){
 	margin-top: 3rem;
+	}
+@media screen and (min-width: 500px){
+	margin-top: 6.4rem;
+	}
+@media screen and (max-width: 49px){
+	margin-top: 0.5rem;
 	}
 `

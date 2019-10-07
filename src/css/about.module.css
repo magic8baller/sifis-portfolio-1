@@ -41,6 +41,7 @@
   }
   .about-info p {
     width: 80%;
+    margin-top: 2.3rem;
   }
 }
 @media screen and (min-width: 992px) {

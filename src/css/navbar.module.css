@@ -32,7 +32,8 @@
 }
 .show-nav {
   height: 200px;
-  text-align: left;
+	text-align: left;
+	/* margin-bottom: 5rem; */
 }
 .nav-links a {
   display: block;

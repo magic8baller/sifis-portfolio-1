@@ -32,8 +32,8 @@
 }
 .show-nav {
   height: 200px;
-	text-align: left;
-	/* margin-bottom: 5rem; */
+  text-align: left;
+  /* margin-bottom: 5rem; */
 }
 .nav-links a {
   display: block;
@@ -81,7 +81,7 @@
     width: 26%;
   }
   .navbar {
-    padding: 0 1rem;
+    padding: 0 1.8rem 4rem;
   }
 }
 @media screen and (max-width: 320px) {
@@ -100,7 +100,7 @@
 
 @media screen and (max-width: 992px) {
   .navbar {
-    padding: 0 2rem 0 0.7rem;
+    /* padding: 0 2rem 0 0.7rem; */
     margin-bottom: -6rem;
   }
 }

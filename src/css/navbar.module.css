@@ -80,7 +80,7 @@
     width: 26%;
   }
   .navbar {
-    padding: 0 1.8rem 4rem;
+    padding: 0 1rem;
   }
 }
 @media screen and (max-width: 320px) {
@@ -99,7 +99,7 @@
 
 @media screen and (max-width: 992px) {
   .navbar {
-    /* padding-bottom: 0rem; */
+    padding: 0 2rem 0 0.7rem;
     margin-bottom: -6rem;
   }
 }

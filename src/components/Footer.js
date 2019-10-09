@@ -35,7 +35,7 @@ const Footer = () => {
 			<div className={styles.copyright}>
 				copyright &copy; Iosif Kalogerakis {new Date().getFullYear()} all rights reserved
 				<br />
-				<small style={{fontSize: '0.6rem'}}><em>Made with <span aria-label='emoji heart' role="img">❤️</span> by Leslie Turis</em></small>
+				<small style={{fontSize: '0.6rem'}}><em>Made with <span aria-label='emoji heart' role="img">❤️</span> by <a href='mailto:lturis@gmail.com' target='_blank' rel='noopener noreferrer' className={styles.leslieLink}>Leslie Turis</a></em></small>
 			</div>
 		</footer>
 	)

@@ -18,6 +18,15 @@
 .links a:hover {
   color: var(--primaryColor);
 }
+
+.leslie-link {
+	font-size:0.72rem;
+	text-decoration: none;
+	color: var(--mainWhite);
+}
+a.leslie-link:hover {
+	color: var(--primaryColor);
+}
 .icons a {
   display: inline-block;
   margin: 1rem;

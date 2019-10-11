@@ -14,17 +14,17 @@ const Error = ({data}) => {
 		<Layout>
 			<SEO title="Error" />
 			<Banner title="Uh oh..." info="No page exists at this address">
-				<br/>
-			<StyledHero img={data.oopsy.childImageSharp.fluid}>
-			</StyledHero>
-			<header className={styles.error}>
-				<br/><br/>
+				<br />
+				<StyledHero img={data.oopsy.childImageSharp.fluid}>
+				</StyledHero>
+				<header className={styles.error}>
+					<br /><br />
 					<AniLink fade to='/' className='btn-white'>
 						Return to Homepage
 				</AniLink>
-			</header>
-				</Banner>
-				<br/>
+				</header>
+			</Banner>
+			<br />
 		</Layout>
 	)
 }
@@ -32,7 +32,7 @@ export default Error
 
 export const query = graphql`
 	query {
-		oopsy: file(relativePath: {eq: "oopsy.jpeg"}){
+		oopsy: file(relativePath: {eq: "abstract-paint2.jpeg"}){
 			childImageSharp{
 				fluid(quality: 90, maxWidth: 4160){
 				...GatsbyImageSharpFluid_withWebp

@@ -32,7 +32,7 @@ export default Error
 
 export const query = graphql`
 	query {
-		oopsy: file(relativePath: {eq: "abstract-paint2.jpeg"}){
+		oopsy: file(relativePath: {eq: "abstract-paint2.jpg"}){
 			childImageSharp{
 				fluid(quality: 90, maxWidth: 4160){
 				...GatsbyImageSharpFluid_withWebp

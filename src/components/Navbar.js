@@ -1,4 +1,4 @@
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import {Link} from "gatsby";
 import React, {useState} from "react";
 import {FaAlignRight} from "react-icons/fa";
 import {mainLinks} from "../constants/links";
@@ -16,7 +16,7 @@ const Navbar = () => {
 		<nav className={styles.navbar}>
 			<div className={styles.navCenter}>
 				<div className={styles.navHeader}>
-					<AniLink swipe to='/'><img className={styles.img} src={logo} aria-label='artist logo index link' alt="logo" /></AniLink>
+					<Link to='/'><img className={styles.img} src={logo} aria-label='artist logo index link' alt="logo" /></Link>
 					<button type="button" aria-label="dropdown menu" className={styles.logoBtn} onClick={toggleNav}>
 						<FaAlignRight className={styles.logoIcon} />
 					</button>
@@ -32,7 +32,7 @@ const Navbar = () => {
 					{mainLinks.map((item, index) => {
 						return (
 							<li key={index}>
-								<AniLink swipe to={item.path} className={styles.linkText}>{item.text}</AniLink>
+								<Link to={item.path} className={styles.linkText}>{item.text}</Link>
 							</li>
 						)
 					})}

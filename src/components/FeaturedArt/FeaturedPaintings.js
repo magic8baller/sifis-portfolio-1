@@ -1,5 +1,5 @@
 // import {graphql, useStaticQuery} from 'gatsby';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import {Link} from "gatsby";
 import React from 'react';
 import styles from '../../css/items.module.css';
 import {usePaintings} from '../../hooks/usePaintings';
@@ -16,7 +16,7 @@ const FeaturedArt = () => {
 					return <Artwork key={node.contentful_id} art={node} />
 				})}
 			</section>
-			<AniLink fade to='/gallery/' className='btn-primary'>return to gallery</AniLink>
+			<Link to='/gallery/' className='btn-primary'>return to gallery</Link>
 		</main>
 	)
 }

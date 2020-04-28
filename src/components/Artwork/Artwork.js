@@ -1,5 +1,5 @@
 import Image from 'gatsby-image';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import {Link} from "gatsby";
 import PropTypes from 'prop-types';
 import React from 'react';
 import {FaApple, FaCalendarAlt, FaPalette, FaPencilAlt} from 'react-icons/fa';
@@ -21,19 +21,8 @@ const Artwork = ({art}) => {
 		<article className={styles.art}>
 			<div className={styles.imgContainer} >
 				<Image fluid={mainImage} description={imageDescription} className={styles.img} alt='single artwork' />
-				<AniLink fade className={styles.link} to={
-					`/${collection + 's'}/${slug}`}>expand</AniLink>
-			</div>
-			<div className={styles.footer}>
-				<h3>{name}</h3>
-				<div className={styles.info}>
-					<p className={styles.description}>
-						{mediumIcon}&nbsp;<em>{description || ''}</em>
-					</p>
-					<div className={styles.details}>
-						<p><FaCalendarAlt />&nbsp;{completed}</p>
-					</div>
-				</div>
+				<Link className={styles.link} to={
+					`/${collection + 's'}/${slug}`}>expand</Link>
 			</div>
 		</article>
 	)

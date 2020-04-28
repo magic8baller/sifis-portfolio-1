@@ -1,4 +1,4 @@
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import {Link} from "gatsby";
 import React from "react";
 import {mainLinks} from "../constants/links";
 import socialIcons from "../constants/social-icons";
@@ -11,9 +11,9 @@ const Footer = () => {
 			<div className={styles.links}>
 				{mainLinks.map((item, index) => {
 					return (
-						<AniLink swipe key={index} to={item.path}>
+						<Link key={index} to={item.path}>
 							<span className={styles.text}>{item.text}</span>
-						</AniLink>
+						</Link>
 					)
 				})}
 			</div>

@@ -1,5 +1,5 @@
 import {graphql} from "gatsby";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import {Link} from "gatsby";
 import React from "react";
 import Banner from '../components/Banner';
 import Layout from "../components/Layout";
@@ -19,9 +19,9 @@ const Error = ({data}) => {
 				</StyledHero>
 				<header className={styles.error}>
 					<br /><br />
-					<AniLink fade to='/' className='btn-white'>
+					<Link to='/' className='btn-white'>
 						Return to Homepage
-				</AniLink>
+				</Link>
 				</header>
 			</Banner>
 			<br />

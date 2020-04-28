@@ -1,5 +1,5 @@
 import Image from 'gatsby-image';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import {Link} from "gatsby";
 import React from 'react';
 import styles from '../../css/art.module.css';
 
@@ -16,7 +16,7 @@ const Thumb = ({art}) => {
 		<article className={styles.art}>
 			<div className={styles.imgContainer}>
 				<Image fluid={mainImage} className={styles.img} alt='single Thumb' />
-				<AniLink fade className={styles.link} to={`/${redirectLink}`}><span className={styles.thumbTitle}>{thumbTitle}</span></AniLink>
+				<Link className={styles.link} to={`/${redirectLink}`}><span className={styles.thumbTitle}>{thumbTitle}</span></Link>
 			</div>
 			<div className={styles.footer}>
 				<h2>{thumbTitle}</h2>

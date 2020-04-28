@@ -1,5 +1,4 @@
-import {graphql} from "gatsby";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import {graphql, Link} from "gatsby";
 import React from "react";
 import Banner from "../components/Banner";
 import Layout from "../components/Layout";
@@ -12,7 +11,7 @@ export default ({data}) => (
 		<SEO title="Home" />
 		<StyledHero home='true' img={data.defaultBcg.childImageSharp.fluid}>
 			<Banner title='iosif kalogerakis' info='Painter and Digital Artist'>
-				<AniLink style={{margin: '1rem'}} fade to='/gallery' className='btn-white'>portfolio</AniLink>
+				<Link style={{margin: '1rem'}} to='/gallery' className='btn-white'>portfolio</Link>
 			</Banner>
 		</StyledHero>
 	</Layout>

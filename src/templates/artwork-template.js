@@ -1,6 +1,5 @@
-import {graphql} from "gatsby";
+import {graphql, Link} from "gatsby";
 import Img from 'gatsby-image';
-import AniLink from "gatsby-plugin-transition-link/AniLink";
 import React from 'react';
 import Layout from "../components/Layout";
 import SEO from '../components/SEO';
@@ -26,15 +25,15 @@ const Template = ({data}) => {
 							)
 						})}
 					</div>
-					<h2>{name}</h2>
+					{/* <h2>{name}</h2> */}
 					<div className={styles.links}>
-						<AniLink fade to="/gallery" className="btn-primary">
+						<Link to="/gallery" className="btn-primary">
 							return to gallery
-          </AniLink>
+          </Link>
 						<br /><br />
-						<AniLink fade to={`/${redirectLink}`} className="btn-primary">
+						<Link to={`/${redirectLink}`} className="btn-primary">
 							return to {redirectTitle}
-						</AniLink>
+						</Link>
 					</div>
 				</section>
 			</main>

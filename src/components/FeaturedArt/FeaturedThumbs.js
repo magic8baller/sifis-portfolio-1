@@ -1,4 +1,4 @@
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import {Link} from "gatsby";
 import React from 'react';
 import styles from '../../css/items.module.css';
 import {useThumbs} from '../../hooks';
@@ -15,7 +15,7 @@ const FeaturedThumb = () => {
 					return (<div key={node.contentful_id}><Thumb key={node.contentful_id} art={node} /></div>)
 				})}
 			</section>
-			<AniLink fade to='/' className='btn-primary'>return home</AniLink>
+			<Link to='/' className='btn-primary'>return home</Link>
 		</main>
 	)
 }

@@ -1,6 +1,5 @@
 import Image from 'gatsby-image';
-// import {FaMap} from 'react-icons/fa'
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import {Link} from "gatsby";
 import React from 'react';
 import styles from '../../css/art.module.css';
 
@@ -14,7 +13,7 @@ const CollectionThumb = ({art}) => {
 		<article className={styles.art}>
 			<div className={styles.imgContainer}>
 				<Image fluid={mainImage} className={styles.img} alt='single Thumb' />
-				<AniLink fade className={styles.link} to={`/${collection}`}>{collection}</AniLink>
+				<Link className={styles.link} to={`/${collection}`}>{collection}</Link>
 			</div>
 			<div className={styles.footer}>
 				<h2>{name}</h2>

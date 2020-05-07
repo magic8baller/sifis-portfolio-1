@@ -5,9 +5,9 @@ import styled from 'styled-components'
 import img from '../images/sifis1.jpg'
 const getImages = graphql`
 {
-	fixed: file(relativePath: {eq: "logo.png"}){
+	fixed: file(relativePath: {eq: "logo_acrylic.jpg"}){
 		childImageSharp{
-			fixed(width: 300, height: 400){
+			fixed(width: 150, height: 150){
 				...GatsbyImageSharpFixed
 			}
 		}
